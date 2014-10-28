@@ -23,4 +23,5 @@ platforms:
 suites:
   - name: default
     run_list:
+      - chef_tutorial
     attributes:
