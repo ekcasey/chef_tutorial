@@ -1,4 +1,6 @@
 version '0.0.1'
 name    'example'
-depends "rbenv", "1.7.1"
+depends 'rbenv', '1.7.1'
+depends 'mysql'
+depends 'database'
 
