@@ -1,8 +1,0 @@
-.DS_Store
-.idea
-*.iml
-tmp
-.vagrant
-modules/*
-.bundle
-.tmp
