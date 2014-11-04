@@ -1,0 +1,903 @@
+I, [2014-10-27T21:53:04.135074 #15426]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T21:53:05.136013 #15426]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+E, [2014-10-27T21:53:37.494184 #15497] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-27T21:53:37.494431 #15497] ERROR -- Kitchen: Class: Kitchen::ClientError
+E, [2014-10-27T21:53:37.494531 #15497] ERROR -- Kitchen: Message: Could not load the 'ec2' driver from the load path. Please ensure that your driver is installed as a gem or included in your Gemfile if using Bundler.
+E, [2014-10-27T21:53:37.494618 #15497] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-10-27T21:53:37.494701 #15497] ERROR -- Kitchen: Class: LoadError
+E, [2014-10-27T21:53:37.494782 #15497] ERROR -- Kitchen: Message: cannot load such file -- kitchen/driver/ec2
+E, [2014-10-27T21:53:37.494863 #15497] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-27T21:53:37.494943 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/driver.rb:50:in `rescue in for_plugin'
+E, [2014-10-27T21:53:37.495039 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/driver.rb:40:in `for_plugin'
+E, [2014-10-27T21:53:37.495123 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:124:in `new_driver'
+E, [2014-10-27T21:53:37.495206 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:130:in `new_instance'
+E, [2014-10-27T21:53:37.495288 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-10-27T21:53:37.495370 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2014-10-27T21:53:37.495452 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-10-27T21:53:37.495533 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-10-27T21:53:37.495613 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-10-27T21:53:37.495694 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-10-27T21:53:37.495789 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-10-27T21:53:37.495872 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/command/list.rb:31:in `call'
+E, [2014-10-27T21:53:37.495955 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-10-27T21:53:37.496037 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:81:in `list'
+E, [2014-10-27T21:53:37.496118 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-10-27T21:53:37.496199 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-10-27T21:53:37.496280 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-10-27T21:53:37.496397 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-10-27T21:53:37.496496 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-10-27T21:53:37.496581 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-10-27T21:53:37.496662 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-10-27T21:53:37.496743 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-10-27T21:53:37.496824 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/bin/kitchen:23:in `load'
+E, [2014-10-27T21:53:37.496905 #15497] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.0.0-p247/bin/kitchen:23:in `<main>'
+E, [2014-10-27T21:53:37.496984 #15497] ERROR -- Kitchen: ----------------------
+E, [2014-10-27T22:04:17.109399 #40708] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-27T22:04:17.109483 #40708] ERROR -- Kitchen: Class: Kitchen::ClientError
+E, [2014-10-27T22:04:17.109510 #40708] ERROR -- Kitchen: Message: Could not load the 'ec2' driver from the load path. Please ensure that your driver is installed as a gem or included in your Gemfile if using Bundler.
+E, [2014-10-27T22:04:17.109534 #40708] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-10-27T22:04:17.109557 #40708] ERROR -- Kitchen: Class: LoadError
+E, [2014-10-27T22:04:17.109579 #40708] ERROR -- Kitchen: Message: cannot load such file -- kitchen/driver/ec2
+E, [2014-10-27T22:04:17.109602 #40708] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-27T22:04:17.109625 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver.rb:50:in `rescue in for_plugin'
+E, [2014-10-27T22:04:17.109678 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver.rb:40:in `for_plugin'
+E, [2014-10-27T22:04:17.109702 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:124:in `new_driver'
+E, [2014-10-27T22:04:17.109725 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:130:in `new_instance'
+E, [2014-10-27T22:04:17.109748 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-10-27T22:04:17.109771 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2014-10-27T22:04:17.109794 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-10-27T22:04:17.109817 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-10-27T22:04:17.109840 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-10-27T22:04:17.109863 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-10-27T22:04:17.109886 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-10-27T22:04:17.109924 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/list.rb:31:in `call'
+E, [2014-10-27T22:04:17.109949 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-10-27T22:04:17.109972 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:81:in `list'
+E, [2014-10-27T22:04:17.109994 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-10-27T22:04:17.110017 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-10-27T22:04:17.110040 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-10-27T22:04:17.110062 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-10-27T22:04:17.110085 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-10-27T22:04:17.110108 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-10-27T22:04:17.110131 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-10-27T22:04:17.110154 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-10-27T22:04:17.110180 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `load'
+E, [2014-10-27T22:04:17.110204 #40708] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `<main>'
+E, [2014-10-27T22:04:17.110226 #40708] ERROR -- Kitchen: ----------------------
+E, [2014-10-27T22:06:40.515519 #43029] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-27T22:06:40.515604 #43029] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2014-10-27T22:06:40.515632 #43029] ERROR -- Kitchen: Message: Kitchen::Driver::Ec2<default-centos-64>#config[:aws_access_key_id] cannot be blank
+E, [2014-10-27T22:06:40.515656 #43029] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-27T22:06:40.515679 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:209:in `block in required_config'
+E, [2014-10-27T22:06:40.515702 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:50:in `call'
+E, [2014-10-27T22:06:40.515725 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:50:in `block in validate_config!'
+E, [2014-10-27T22:06:40.515748 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:49:in `each'
+E, [2014-10-27T22:06:40.515770 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:49:in `validate_config!'
+E, [2014-10-27T22:06:40.515793 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:226:in `setup_driver'
+E, [2014-10-27T22:06:40.515820 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:92:in `initialize'
+E, [2014-10-27T22:06:40.515858 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new'
+E, [2014-10-27T22:06:40.516188 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new_instance'
+E, [2014-10-27T22:06:40.516223 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-10-27T22:06:40.516248 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2014-10-27T22:06:40.516272 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-10-27T22:06:40.516296 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-10-27T22:06:40.516320 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-10-27T22:06:40.516344 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-10-27T22:06:40.516373 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-10-27T22:06:40.516398 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/list.rb:31:in `call'
+E, [2014-10-27T22:06:40.516422 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-10-27T22:06:40.516446 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:81:in `list'
+E, [2014-10-27T22:06:40.516471 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-10-27T22:06:40.516494 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-10-27T22:06:40.516519 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-10-27T22:06:40.516543 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-10-27T22:06:40.516567 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-10-27T22:06:40.516595 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-10-27T22:06:40.516619 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-10-27T22:06:40.516644 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-10-27T22:06:40.516668 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `load'
+E, [2014-10-27T22:06:40.516692 #43029] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `<main>'
+E, [2014-10-27T22:06:40.516716 #43029] ERROR -- Kitchen: ----------------------
+E, [2014-10-27T22:08:56.330912 #43076] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-27T22:08:56.331000 #43076] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2014-10-27T22:08:56.331027 #43076] ERROR -- Kitchen: Message: Kitchen::Driver::Ec2<default-centos-64>#config[:aws_access_key_id] cannot be blank
+E, [2014-10-27T22:08:56.331081 #43076] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-27T22:08:56.331107 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:209:in `block in required_config'
+E, [2014-10-27T22:08:56.331131 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:50:in `call'
+E, [2014-10-27T22:08:56.331155 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:50:in `block in validate_config!'
+E, [2014-10-27T22:08:56.331187 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:49:in `each'
+E, [2014-10-27T22:08:56.331208 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:49:in `validate_config!'
+E, [2014-10-27T22:08:56.331229 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:226:in `setup_driver'
+E, [2014-10-27T22:08:56.331251 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:92:in `initialize'
+E, [2014-10-27T22:08:56.331272 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new'
+E, [2014-10-27T22:08:56.331293 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new_instance'
+E, [2014-10-27T22:08:56.331314 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-10-27T22:08:56.331335 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2014-10-27T22:08:56.331356 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-10-27T22:08:56.331405 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-10-27T22:08:56.331427 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-10-27T22:08:56.331448 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-10-27T22:08:56.331469 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-10-27T22:08:56.331491 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/list.rb:31:in `call'
+E, [2014-10-27T22:08:56.331512 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-10-27T22:08:56.331533 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:81:in `list'
+E, [2014-10-27T22:08:56.331554 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-10-27T22:08:56.331575 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-10-27T22:08:56.331613 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-10-27T22:08:56.331637 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-10-27T22:08:56.331659 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-10-27T22:08:56.331681 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-10-27T22:08:56.331703 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-10-27T22:08:56.331725 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-10-27T22:08:56.331747 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `load'
+E, [2014-10-27T22:08:56.331768 #43076] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `<main>'
+E, [2014-10-27T22:08:56.331790 #43076] ERROR -- Kitchen: ----------------------
+E, [2014-10-27T22:09:33.514467 #43116] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-27T22:09:33.514555 #43116] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2014-10-27T22:09:33.514593 #43116] ERROR -- Kitchen: Message: Kitchen::Driver::Ec2<default-centos-64>#config[:aws_access_key_id] cannot be blank
+E, [2014-10-27T22:09:33.514619 #43116] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-27T22:09:33.514645 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:209:in `block in required_config'
+E, [2014-10-27T22:09:33.514671 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:50:in `call'
+E, [2014-10-27T22:09:33.514699 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:50:in `block in validate_config!'
+E, [2014-10-27T22:09:33.514732 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:49:in `each'
+E, [2014-10-27T22:09:33.514772 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:49:in `validate_config!'
+E, [2014-10-27T22:09:33.514795 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:226:in `setup_driver'
+E, [2014-10-27T22:09:33.514817 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:92:in `initialize'
+E, [2014-10-27T22:09:33.514839 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new'
+E, [2014-10-27T22:09:33.514862 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new_instance'
+E, [2014-10-27T22:09:33.514884 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-10-27T22:09:33.514906 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2014-10-27T22:09:33.514928 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-10-27T22:09:33.514970 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-10-27T22:09:33.514994 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-10-27T22:09:33.515016 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-10-27T22:09:33.515038 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-10-27T22:09:33.515059 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/list.rb:31:in `call'
+E, [2014-10-27T22:09:33.515084 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-10-27T22:09:33.515106 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:81:in `list'
+E, [2014-10-27T22:09:33.515128 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-10-27T22:09:33.515150 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-10-27T22:09:33.515172 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-10-27T22:09:33.515193 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-10-27T22:09:33.515215 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-10-27T22:09:33.515236 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-10-27T22:09:33.515258 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-10-27T22:09:33.515283 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-10-27T22:09:33.515330 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `load'
+E, [2014-10-27T22:09:33.515352 #43116] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `<main>'
+E, [2014-10-27T22:09:33.515374 #43116] ERROR -- Kitchen: ----------------------
+I, [2014-10-27T22:11:17.106427 #43201]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:11:17.673111 #43201]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+E, [2014-10-27T22:11:31.088193 #43201] ERROR -- Kitchen: Create failed on instance <default-centos-64>.
+E, [2014-10-27T22:14:10.544288 #43254] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-27T22:14:10.544367 #43254] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2014-10-27T22:14:10.544396 #43254] ERROR -- Kitchen: Message: Kitchen::Driver::Ec2<default-ubuntu>#config[:image_id] cannot be blank
+E, [2014-10-27T22:14:10.544422 #43254] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-27T22:14:10.544447 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:209:in `block in required_config'
+E, [2014-10-27T22:14:10.544472 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:50:in `call'
+E, [2014-10-27T22:14:10.544522 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:50:in `block in validate_config!'
+E, [2014-10-27T22:14:10.544553 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:49:in `each'
+E, [2014-10-27T22:14:10.544582 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:49:in `validate_config!'
+E, [2014-10-27T22:14:10.544607 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:226:in `setup_driver'
+E, [2014-10-27T22:14:10.544630 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:92:in `initialize'
+E, [2014-10-27T22:14:10.544654 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new'
+E, [2014-10-27T22:14:10.544676 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new_instance'
+E, [2014-10-27T22:14:10.544699 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-10-27T22:14:10.544722 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2014-10-27T22:14:10.544745 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-10-27T22:14:10.544772 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-10-27T22:14:10.544796 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-10-27T22:14:10.544818 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-10-27T22:14:10.544842 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-10-27T22:14:10.544865 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/list.rb:31:in `call'
+E, [2014-10-27T22:14:10.544901 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-10-27T22:14:10.544925 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:81:in `list'
+E, [2014-10-27T22:14:10.544948 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-10-27T22:14:10.544971 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-10-27T22:14:10.544994 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-10-27T22:14:10.545017 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-10-27T22:14:10.545039 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-10-27T22:14:10.545065 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-10-27T22:14:10.545098 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-10-27T22:14:10.545123 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-10-27T22:14:10.545154 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `load'
+E, [2014-10-27T22:14:10.545176 #43254] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `<main>'
+E, [2014-10-27T22:14:10.545197 #43254] ERROR -- Kitchen: ----------------------
+E, [2014-10-27T22:17:16.008179 #43304] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-27T22:17:16.008257 #43304] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2014-10-27T22:17:16.008286 #43304] ERROR -- Kitchen: Message: Kitchen::Driver::Ec2<default-ubuntu>#config[:image_id] cannot be blank
+E, [2014-10-27T22:17:16.008312 #43304] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-27T22:17:16.008336 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:209:in `block in required_config'
+E, [2014-10-27T22:17:16.008369 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:50:in `call'
+E, [2014-10-27T22:17:16.008400 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:50:in `block in validate_config!'
+E, [2014-10-27T22:17:16.008423 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:49:in `each'
+E, [2014-10-27T22:17:16.008445 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:49:in `validate_config!'
+E, [2014-10-27T22:17:16.008471 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:226:in `setup_driver'
+E, [2014-10-27T22:17:16.008508 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:92:in `initialize'
+E, [2014-10-27T22:17:16.008530 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new'
+E, [2014-10-27T22:17:16.008552 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new_instance'
+E, [2014-10-27T22:17:16.008575 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-10-27T22:17:16.008597 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2014-10-27T22:17:16.008619 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-10-27T22:17:16.008641 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-10-27T22:17:16.008663 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-10-27T22:17:16.008685 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-10-27T22:17:16.008707 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-10-27T22:17:16.008751 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/list.rb:31:in `call'
+E, [2014-10-27T22:17:16.008775 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-10-27T22:17:16.008800 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:81:in `list'
+E, [2014-10-27T22:17:16.008823 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-10-27T22:17:16.008845 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-10-27T22:17:16.008866 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-10-27T22:17:16.008888 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-10-27T22:17:16.008909 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-10-27T22:17:16.008931 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-10-27T22:17:16.008952 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-10-27T22:17:16.008974 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-10-27T22:17:16.008998 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `load'
+E, [2014-10-27T22:17:16.009051 #43304] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `<main>'
+E, [2014-10-27T22:17:16.009074 #43304] ERROR -- Kitchen: ----------------------
+I, [2014-10-27T22:17:43.234538 #43381]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:17:43.796845 #43381]  INFO -- Kitchen: -----> Creating <default-ubuntu>...
+E, [2014-10-27T22:17:44.350236 #43381] ERROR -- Kitchen: Create failed on instance <default-ubuntu>.
+I, [2014-10-27T22:18:16.914240 #43456]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:18:17.473809 #43456]  INFO -- Kitchen: -----> Creating <default-ubuntu>...
+E, [2014-10-27T22:18:18.319465 #43456] ERROR -- Kitchen: Create failed on instance <default-ubuntu>.
+I, [2014-10-27T22:18:46.808056 #43496]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:18:47.375480 #43496]  INFO -- Kitchen: -----> Creating <default-ubuntu>...
+E, [2014-10-27T22:18:47.810618 #43496] ERROR -- Kitchen: Create failed on instance <default-ubuntu>.
+I, [2014-10-27T22:24:15.952802 #43552]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:24:16.527917 #43552]  INFO -- Kitchen: -----> Creating <default-centos>...
+E, [2014-10-27T22:24:17.993159 #43552] ERROR -- Kitchen: Create failed on instance <default-centos>.
+I, [2014-10-27T22:24:26.734644 #43589]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:24:27.301328 #43589]  INFO -- Kitchen: -----> Creating <default-rhel>...
+E, [2014-10-27T22:24:27.717779 #43589] ERROR -- Kitchen: Create failed on instance <default-rhel>.
+I, [2014-10-27T22:24:55.380212 #43629]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:24:55.956446 #43629]  INFO -- Kitchen: -----> Creating <default-ubuntu>...
+E, [2014-10-27T22:24:56.653421 #43629] ERROR -- Kitchen: Create failed on instance <default-ubuntu>.
+I, [2014-10-27T22:27:05.731273 #43674]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:27:06.321239 #43674]  INFO -- Kitchen: -----> Creating <default-ubuntu>...
+E, [2014-10-27T22:27:06.909799 #43674] ERROR -- Kitchen: Create failed on instance <default-ubuntu>.
+I, [2014-10-27T22:30:15.066167 #43761]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:30:15.626606 #43761]  INFO -- Kitchen: -----> Creating <default-centos-53>...
+E, [2014-10-27T22:30:16.224677 #43761] ERROR -- Kitchen: Create failed on instance <default-centos-53>.
+I, [2014-10-27T22:33:08.191064 #43817]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:33:08.763251 #43817]  INFO -- Kitchen: -----> Creating <default-centos-53>...
+E, [2014-10-27T22:33:09.423109 #43817] ERROR -- Kitchen: Create failed on instance <default-centos-53>.
+I, [2014-10-27T22:34:38.848971 #43865]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+E, [2014-10-27T22:34:39.432638 #43865] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-27T22:34:39.432703 #43865] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2014-10-27T22:34:39.432730 #43865] ERROR -- Kitchen: Message: Kitchen::Driver::Ec2<default-centos-53>#config[:image_id] cannot be blank
+E, [2014-10-27T22:34:39.432755 #43865] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-27T22:34:39.432778 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:209:in `block in required_config'
+E, [2014-10-27T22:34:39.432810 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:50:in `call'
+E, [2014-10-27T22:34:39.432836 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:50:in `block in validate_config!'
+E, [2014-10-27T22:34:39.432859 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:49:in `each'
+E, [2014-10-27T22:34:39.432882 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:49:in `validate_config!'
+E, [2014-10-27T22:34:39.432904 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:226:in `setup_driver'
+E, [2014-10-27T22:34:39.432927 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:92:in `initialize'
+E, [2014-10-27T22:34:39.432949 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new'
+E, [2014-10-27T22:34:39.432971 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new_instance'
+E, [2014-10-27T22:34:39.432993 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-10-27T22:34:39.433016 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2014-10-27T22:34:39.433041 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-10-27T22:34:39.433063 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-10-27T22:34:39.433085 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-10-27T22:34:39.433108 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-10-27T22:34:39.433151 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-10-27T22:34:39.433175 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:37:in `block in call'
+E, [2014-10-27T22:34:39.433198 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:34:39.433236 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:36:in `call'
+E, [2014-10-27T22:34:39.433258 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-10-27T22:34:39.433284 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:118:in `block (2 levels) in <class:CLI>'
+E, [2014-10-27T22:34:39.433306 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-10-27T22:34:39.433328 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-10-27T22:34:39.433350 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-10-27T22:34:39.433372 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-10-27T22:34:39.433394 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-10-27T22:34:39.433416 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-10-27T22:34:39.433438 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-10-27T22:34:39.433460 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-10-27T22:34:39.433485 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `load'
+E, [2014-10-27T22:34:39.433507 #43865] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `<main>'
+E, [2014-10-27T22:34:39.433529 #43865] ERROR -- Kitchen: ----------------------
+I, [2014-10-27T22:34:48.621941 #43902]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+E, [2014-10-27T22:34:49.186196 #43902] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-27T22:34:49.186263 #43902] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2014-10-27T22:34:49.186292 #43902] ERROR -- Kitchen: Message: Kitchen::Driver::Ec2<default-centos>#config[:image_id] cannot be blank
+E, [2014-10-27T22:34:49.186319 #43902] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-27T22:34:49.186344 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:209:in `block in required_config'
+E, [2014-10-27T22:34:49.186373 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:50:in `call'
+E, [2014-10-27T22:34:49.186426 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:50:in `block in validate_config!'
+E, [2014-10-27T22:34:49.186450 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:49:in `each'
+E, [2014-10-27T22:34:49.186495 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:49:in `validate_config!'
+E, [2014-10-27T22:34:49.186522 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:226:in `setup_driver'
+E, [2014-10-27T22:34:49.186545 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:92:in `initialize'
+E, [2014-10-27T22:34:49.186569 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new'
+E, [2014-10-27T22:34:49.186592 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new_instance'
+E, [2014-10-27T22:34:49.186615 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-10-27T22:34:49.186638 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2014-10-27T22:34:49.186662 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-10-27T22:34:49.186685 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-10-27T22:34:49.186708 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-10-27T22:34:49.186731 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-10-27T22:34:49.186754 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-10-27T22:34:49.186777 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:37:in `block in call'
+E, [2014-10-27T22:34:49.186805 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:34:49.186828 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:36:in `call'
+E, [2014-10-27T22:34:49.186852 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-10-27T22:34:49.186890 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:118:in `block (2 levels) in <class:CLI>'
+E, [2014-10-27T22:34:49.186914 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-10-27T22:34:49.186937 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-10-27T22:34:49.186960 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-10-27T22:34:49.186983 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-10-27T22:34:49.187006 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-10-27T22:34:49.187037 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-10-27T22:34:49.187061 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-10-27T22:34:49.187085 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-10-27T22:34:49.187108 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `load'
+E, [2014-10-27T22:34:49.187135 #43902] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `<main>'
+E, [2014-10-27T22:34:49.187159 #43902] ERROR -- Kitchen: ----------------------
+I, [2014-10-27T22:36:06.670293 #43943]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:36:07.229401 #43943]  INFO -- Kitchen: -----> Creating <default-centos-53>...
+E, [2014-10-27T22:36:07.395096 #43943] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-27T22:36:07.395180 #43943] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2014-10-27T22:36:07.395207 #43943] ERROR -- Kitchen: Message: Failed to complete #create action: [Unknown region: "us-west-2a"]
+E, [2014-10-27T22:36:07.395233 #43943] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-10-27T22:36:07.395257 #43943] ERROR -- Kitchen: Class: ArgumentError
+E, [2014-10-27T22:36:07.395280 #43943] ERROR -- Kitchen: Message: Unknown region: "us-west-2a"
+E, [2014-10-27T22:36:07.395304 #43943] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-27T22:36:07.395340 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/fog-1.24.0/lib/fog/aws/region_methods.rb:6:in `validate_aws_region'
+E, [2014-10-27T22:36:07.395404 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/fog-1.24.0/lib/fog/aws/compute.rb:476:in `initialize'
+E, [2014-10-27T22:36:07.395446 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/fog-core-1.24.0/lib/fog/core/service.rb:115:in `new'
+E, [2014-10-27T22:36:07.395519 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/fog-core-1.24.0/lib/fog/core/service.rb:115:in `new'
+E, [2014-10-27T22:36:07.395580 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/fog-core-1.24.0/lib/fog/compute.rb:62:in `new'
+E, [2014-10-27T22:36:07.395642 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:105:in `connection'
+E, [2014-10-27T22:36:07.395703 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:118:in `create_server'
+E, [2014-10-27T22:36:07.395765 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
+E, [2014-10-27T22:36:07.395826 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-10-27T22:36:07.395888 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-10-27T22:36:07.395950 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-10-27T22:36:07.396012 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-10-27T22:36:07.396140 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-10-27T22:36:07.396234 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:36:07.396301 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-10-27T22:36:07.396362 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-10-27T22:36:07.396423 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2014-10-27T22:36:07.396484 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-10-27T22:36:07.396544 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-10-27T22:36:07.396605 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-10-27T22:36:07.396665 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-10-27T22:36:07.396725 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-27T22:36:07.396786 #43943] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-27T22:36:07.396847 #43943] ERROR -- Kitchen: ----------------------
+I, [2014-10-27T22:37:34.916963 #43983]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:37:35.484307 #43983]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+E, [2014-10-27T22:37:36.685444 #43983] ERROR -- Kitchen: Create failed on instance <default-centos-64>.
+I, [2014-10-27T22:38:09.101798 #44024]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+E, [2014-10-27T22:38:09.676328 #44024] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-27T22:38:09.676399 #44024] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2014-10-27T22:38:09.676431 #44024] ERROR -- Kitchen: Message: Kitchen::Driver::Ec2<default-centos-53>#config[:image_id] cannot be blank
+E, [2014-10-27T22:38:09.676460 #44024] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-27T22:38:09.676509 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:209:in `block in required_config'
+E, [2014-10-27T22:38:09.676538 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:50:in `call'
+E, [2014-10-27T22:38:09.676566 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:50:in `block in validate_config!'
+E, [2014-10-27T22:38:09.676594 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:49:in `each'
+E, [2014-10-27T22:38:09.676622 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:49:in `validate_config!'
+E, [2014-10-27T22:38:09.676650 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:226:in `setup_driver'
+E, [2014-10-27T22:38:09.676678 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:92:in `initialize'
+E, [2014-10-27T22:38:09.676729 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new'
+E, [2014-10-27T22:38:09.676759 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new_instance'
+E, [2014-10-27T22:38:09.676786 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-10-27T22:38:09.676814 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2014-10-27T22:38:09.676850 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-10-27T22:38:09.676873 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-10-27T22:38:09.676897 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-10-27T22:38:09.676919 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-10-27T22:38:09.676942 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-10-27T22:38:09.676982 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:37:in `block in call'
+E, [2014-10-27T22:38:09.677005 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:38:09.677028 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:36:in `call'
+E, [2014-10-27T22:38:09.677050 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-10-27T22:38:09.677073 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:118:in `block (2 levels) in <class:CLI>'
+E, [2014-10-27T22:38:09.677096 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-10-27T22:38:09.677119 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-10-27T22:38:09.677175 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-10-27T22:38:09.677199 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-10-27T22:38:09.677222 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-10-27T22:38:09.677245 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-10-27T22:38:09.677268 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-10-27T22:38:09.677290 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-10-27T22:38:09.677321 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `load'
+E, [2014-10-27T22:38:09.677345 #44024] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `<main>'
+E, [2014-10-27T22:38:09.677368 #44024] ERROR -- Kitchen: ----------------------
+I, [2014-10-27T22:38:24.295826 #44061]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+E, [2014-10-27T22:38:24.861168 #44061] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-27T22:38:24.861242 #44061] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2014-10-27T22:38:24.861269 #44061] ERROR -- Kitchen: Message: Kitchen::Driver::Ec2<default-centos-64>#config[:image_id] cannot be blank
+E, [2014-10-27T22:38:24.861293 #44061] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-27T22:38:24.861334 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:209:in `block in required_config'
+E, [2014-10-27T22:38:24.861358 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:50:in `call'
+E, [2014-10-27T22:38:24.861390 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:50:in `block in validate_config!'
+E, [2014-10-27T22:38:24.861412 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:49:in `each'
+E, [2014-10-27T22:38:24.861434 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:49:in `validate_config!'
+E, [2014-10-27T22:38:24.861456 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:226:in `setup_driver'
+E, [2014-10-27T22:38:24.861478 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:92:in `initialize'
+E, [2014-10-27T22:38:24.861500 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new'
+E, [2014-10-27T22:38:24.861522 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new_instance'
+E, [2014-10-27T22:38:24.861544 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-10-27T22:38:24.861566 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2014-10-27T22:38:24.861588 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-10-27T22:38:24.861610 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-10-27T22:38:24.861631 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-10-27T22:38:24.861653 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-10-27T22:38:24.861677 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-10-27T22:38:24.861700 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:37:in `block in call'
+E, [2014-10-27T22:38:24.861721 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:38:24.861777 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:36:in `call'
+E, [2014-10-27T22:38:24.861801 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-10-27T22:38:24.861822 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:118:in `block (2 levels) in <class:CLI>'
+E, [2014-10-27T22:38:24.861843 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-10-27T22:38:24.861865 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-10-27T22:38:24.861886 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-10-27T22:38:24.861907 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-10-27T22:38:24.861929 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-10-27T22:38:24.861950 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-10-27T22:38:24.861971 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-10-27T22:38:24.861995 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-10-27T22:38:24.862018 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `load'
+E, [2014-10-27T22:38:24.862039 #44061] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `<main>'
+E, [2014-10-27T22:38:24.862060 #44061] ERROR -- Kitchen: ----------------------
+I, [2014-10-27T22:38:42.788589 #44101]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:38:43.355632 #44101]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+E, [2014-10-27T22:38:43.884460 #44101] ERROR -- Kitchen: Create failed on instance <default-centos-64>.
+I, [2014-10-27T22:38:52.452346 #44139]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+E, [2014-10-27T22:38:53.014897 #44139] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-27T22:38:53.014973 #44139] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2014-10-27T22:38:53.015000 #44139] ERROR -- Kitchen: Message: Kitchen::Driver::Ec2<default-centos-64>#config[:image_id] cannot be blank
+E, [2014-10-27T22:38:53.015024 #44139] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-27T22:38:53.015067 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:209:in `block in required_config'
+E, [2014-10-27T22:38:53.015101 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:50:in `call'
+E, [2014-10-27T22:38:53.015124 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:50:in `block in validate_config!'
+E, [2014-10-27T22:38:53.015146 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:49:in `each'
+E, [2014-10-27T22:38:53.015169 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:49:in `validate_config!'
+E, [2014-10-27T22:38:53.015212 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:226:in `setup_driver'
+E, [2014-10-27T22:38:53.015237 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:92:in `initialize'
+E, [2014-10-27T22:38:53.015259 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new'
+E, [2014-10-27T22:38:53.015281 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new_instance'
+E, [2014-10-27T22:38:53.015302 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-10-27T22:38:53.015325 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2014-10-27T22:38:53.015347 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-10-27T22:38:53.015368 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-10-27T22:38:53.015390 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-10-27T22:38:53.015412 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-10-27T22:38:53.015434 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-10-27T22:38:53.015455 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:37:in `block in call'
+E, [2014-10-27T22:38:53.015477 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:38:53.015513 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:36:in `call'
+E, [2014-10-27T22:38:53.015535 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-10-27T22:38:53.015560 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:118:in `block (2 levels) in <class:CLI>'
+E, [2014-10-27T22:38:53.015582 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-10-27T22:38:53.015604 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-10-27T22:38:53.015626 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-10-27T22:38:53.015648 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-10-27T22:38:53.015670 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-10-27T22:38:53.015692 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-10-27T22:38:53.015714 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-10-27T22:38:53.015742 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-10-27T22:38:53.015766 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `load'
+E, [2014-10-27T22:38:53.015788 #44139] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `<main>'
+E, [2014-10-27T22:38:53.015810 #44139] ERROR -- Kitchen: ----------------------
+I, [2014-10-27T22:40:23.111185 #44184]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:40:23.673833 #44184]  INFO -- Kitchen: -----> Creating <default-rhel-70>...
+E, [2014-10-27T22:40:23.827026 #44184] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-27T22:40:23.827070 #44184] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2014-10-27T22:40:23.827098 #44184] ERROR -- Kitchen: Message: Failed to complete #create action: [Unknown region: "us-west-2a"]
+E, [2014-10-27T22:40:23.827124 #44184] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-10-27T22:40:23.827148 #44184] ERROR -- Kitchen: Class: ArgumentError
+E, [2014-10-27T22:40:23.827172 #44184] ERROR -- Kitchen: Message: Unknown region: "us-west-2a"
+E, [2014-10-27T22:40:23.827215 #44184] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-27T22:40:23.827277 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/fog-1.24.0/lib/fog/aws/region_methods.rb:6:in `validate_aws_region'
+E, [2014-10-27T22:40:23.827341 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/fog-1.24.0/lib/fog/aws/compute.rb:476:in `initialize'
+E, [2014-10-27T22:40:23.827404 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/fog-core-1.24.0/lib/fog/core/service.rb:115:in `new'
+E, [2014-10-27T22:40:23.827467 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/fog-core-1.24.0/lib/fog/core/service.rb:115:in `new'
+E, [2014-10-27T22:40:23.827529 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/fog-core-1.24.0/lib/fog/compute.rb:62:in `new'
+E, [2014-10-27T22:40:23.827592 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:105:in `connection'
+E, [2014-10-27T22:40:23.827654 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:118:in `create_server'
+E, [2014-10-27T22:40:23.827717 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
+E, [2014-10-27T22:40:23.827779 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-10-27T22:40:23.827841 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-10-27T22:40:23.827904 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-10-27T22:40:23.827967 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-10-27T22:40:23.828030 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-10-27T22:40:23.828093 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:40:23.828155 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-10-27T22:40:23.828296 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-10-27T22:40:23.828364 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2014-10-27T22:40:23.828428 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-10-27T22:40:23.828491 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-10-27T22:40:23.828552 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-10-27T22:40:23.828615 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-10-27T22:40:23.828677 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-27T22:40:23.828740 #44184] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-27T22:40:23.828801 #44184] ERROR -- Kitchen: ----------------------
+I, [2014-10-27T22:41:56.288460 #44237]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:41:56.877276 #44237]  INFO -- Kitchen: -----> Creating <default-rhel-70>...
+E, [2014-10-27T22:41:57.461204 #44237] ERROR -- Kitchen: Create failed on instance <default-rhel-70>.
+I, [2014-10-27T22:42:24.909004 #44274]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:42:25.465686 #44274]  INFO -- Kitchen: -----> Creating <default-rhel-70>...
+E, [2014-10-27T22:42:25.879136 #44274] ERROR -- Kitchen: Create failed on instance <default-rhel-70>.
+I, [2014-10-27T22:42:44.751582 #44314]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:42:45.324456 #44314]  INFO -- Kitchen: -----> Creating <default-rhel-70>...
+E, [2014-10-27T22:42:45.812683 #44314] ERROR -- Kitchen: Create failed on instance <default-rhel-70>.
+I, [2014-10-27T22:43:46.183945 #44359]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:43:46.741323 #44359]  INFO -- Kitchen: -----> Creating <default-rhel-70>...
+E, [2014-10-27T22:43:47.687705 #44359] ERROR -- Kitchen: Create failed on instance <default-rhel-70>.
+I, [2014-10-27T22:44:20.205442 #44396]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:44:20.783729 #44396]  INFO -- Kitchen: -----> Creating <default-rhel-70>...
+E, [2014-10-27T22:44:21.569923 #44396] ERROR -- Kitchen: Create failed on instance <default-rhel-70>.
+I, [2014-10-27T22:44:32.073381 #44433]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:44:32.649017 #44433]  INFO -- Kitchen: -----> Creating <default-rhel-70>...
+E, [2014-10-27T22:44:33.835063 #44433] ERROR -- Kitchen: Create failed on instance <default-rhel-70>.
+I, [2014-10-27T22:46:33.380911 #44480]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:46:33.955347 #44480]  INFO -- Kitchen: -----> Creating <default-rhel-70>...
+E, [2014-10-27T22:46:34.883768 #44480] ERROR -- Kitchen: Create failed on instance <default-rhel-70>.
+I, [2014-10-27T22:48:35.665078 #44524]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:48:36.230777 #44524]  INFO -- Kitchen: -----> Creating <default-ubuntu>...
+E, [2014-10-27T22:48:37.161335 #44524] ERROR -- Kitchen: Create failed on instance <default-ubuntu>.
+I, [2014-10-27T22:48:55.569316 #44564]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:48:56.142300 #44564]  INFO -- Kitchen: -----> Creating <default-ubuntu>...
+E, [2014-10-27T22:48:56.955736 #44564] ERROR -- Kitchen: Create failed on instance <default-ubuntu>.
+I, [2014-10-27T22:49:53.662124 #44608]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:49:54.228425 #44608]  INFO -- Kitchen: -----> Creating <default-ubuntu>...
+E, [2014-10-27T22:49:55.135997 #44608] ERROR -- Kitchen: Create failed on instance <default-ubuntu>.
+I, [2014-10-27T22:54:16.160956 #44671]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:54:16.733428 #44671]  INFO -- Kitchen: -----> Creating <default-centos-63>...
+E, [2014-10-27T22:54:17.685495 #44671] ERROR -- Kitchen: Create failed on instance <default-centos-63>.
+I, [2014-10-27T22:54:33.715931 #44708]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:54:34.278425 #44708]  INFO -- Kitchen: -----> Creating <default-centos-63>...
+E, [2014-10-27T22:54:35.777932 #44708] ERROR -- Kitchen: Create failed on instance <default-centos-63>.
+I, [2014-10-27T22:56:51.362698 #44757]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:56:51.917571 #44757]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+E, [2014-10-27T22:56:52.856403 #44757] ERROR -- Kitchen: Create failed on instance <default-centos-64>.
+I, [2014-10-27T22:58:19.591631 #44800]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:58:20.166219 #44800]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+E, [2014-10-27T22:58:21.623284 #44800] ERROR -- Kitchen: Create failed on instance <default-centos-64>.
+I, [2014-10-27T22:59:43.198727 #44846]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T22:59:43.807676 #44846]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+E, [2014-10-27T22:59:45.187835 #44846] ERROR -- Kitchen: Create failed on instance <default-centos-64>.
+I, [2014-10-27T23:01:24.034535 #44890]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T23:01:24.650361 #44890]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+E, [2014-10-27T23:01:25.944352 #44890] ERROR -- Kitchen: Create failed on instance <default-centos-64>.
+I, [2014-10-27T23:05:54.216437 #44945]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T23:05:54.790316 #44945]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+I, [2014-10-27T23:15:37.647486 #45103]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T23:15:38.219210 #45103]  INFO -- Kitchen: -----> Destroying <default-centos-64>...
+I, [2014-10-27T23:15:39.959704 #45103]  INFO -- Kitchen: -----> Kitchen is finished. (0m2.31s)
+I, [2014-10-27T23:15:52.514386 #45180]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T23:15:53.074493 #45180]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+I, [2014-10-27T23:52:27.132922 #46029]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T23:52:27.855440 #46029]  INFO -- Kitchen: -----> Destroying <default-centos-64>...
+I, [2014-10-27T23:52:27.856865 #46029]  INFO -- Kitchen: -----> Kitchen is finished. (0m0.72s)
+I, [2014-10-27T23:52:32.958930 #46066]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-27T23:52:33.539510 #46066]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+E, [2014-10-27T23:52:34.479433 #46066] ERROR -- Kitchen: Create failed on instance <default-centos-64>.
+I, [2014-10-27T23:55:53.409053 #46239]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+E, [2014-10-27T23:55:54.051428 #46239] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-27T23:55:54.051472 #46239] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2014-10-27T23:55:54.051506 #46239] ERROR -- Kitchen: Message: Could not load or activate Berkshelf (Unable to activate berkshelf-2.0.18, because thor-0.19.1 conflicts with thor (~> 0.18.0))
+E, [2014-10-27T23:55:54.051538 #46239] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-10-27T23:55:54.051569 #46239] ERROR -- Kitchen: Class: Gem::LoadError
+E, [2014-10-27T23:55:54.051599 #46239] ERROR -- Kitchen: Message: Unable to activate berkshelf-2.0.18, because thor-0.19.1 conflicts with thor (~> 0.18.0)
+E, [2014-10-27T23:55:54.051651 #46239] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-27T23:55:54.051684 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef/berkshelf.rb:80:in `rescue in load_berkshelf!'
+E, [2014-10-27T23:55:54.051720 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef/berkshelf.rb:67:in `load_berkshelf!'
+E, [2014-10-27T23:55:54.051752 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef/berkshelf.rb:43:in `load!'
+E, [2014-10-27T23:55:54.051783 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:135:in `load_needed_dependencies!'
+E, [2014-10-27T23:55:54.051814 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/base.rb:44:in `instance='
+E, [2014-10-27T23:55:54.051871 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:240:in `setup_provisioner'
+E, [2014-10-27T23:55:54.051905 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:93:in `initialize'
+E, [2014-10-27T23:55:54.051944 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new'
+E, [2014-10-27T23:55:54.051967 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new_instance'
+E, [2014-10-27T23:55:54.051992 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-10-27T23:55:54.052015 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2014-10-27T23:55:54.052040 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-10-27T23:55:54.052062 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-10-27T23:55:54.052084 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-10-27T23:55:54.052106 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-10-27T23:55:54.052128 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-10-27T23:55:54.052150 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:37:in `block in call'
+E, [2014-10-27T23:55:54.052171 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T23:55:54.052196 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:36:in `call'
+E, [2014-10-27T23:55:54.052218 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-10-27T23:55:54.052240 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:118:in `block (2 levels) in <class:CLI>'
+E, [2014-10-27T23:55:54.052269 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-10-27T23:55:54.052293 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-10-27T23:55:54.052314 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-10-27T23:55:54.052336 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-10-27T23:55:54.052358 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-10-27T23:55:54.052379 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-10-27T23:55:54.052405 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-10-27T23:55:54.052441 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-10-27T23:55:54.052463 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `load'
+E, [2014-10-27T23:55:54.052485 #46239] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `<main>'
+E, [2014-10-27T23:55:54.052506 #46239] ERROR -- Kitchen: ----------------------
+I, [2014-10-27T23:56:21.075368 #46313]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+E, [2014-10-27T23:56:21.664099 #46313] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-27T23:56:21.664152 #46313] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2014-10-27T23:56:21.664190 #46313] ERROR -- Kitchen: Message: Could not load or activate Berkshelf (Unable to activate berkshelf-2.0.18, because thor-0.19.1 conflicts with thor (~> 0.18.0))
+E, [2014-10-27T23:56:21.664227 #46313] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-10-27T23:56:21.664304 #46313] ERROR -- Kitchen: Class: Gem::LoadError
+E, [2014-10-27T23:56:21.664346 #46313] ERROR -- Kitchen: Message: Unable to activate berkshelf-2.0.18, because thor-0.19.1 conflicts with thor (~> 0.18.0)
+E, [2014-10-27T23:56:21.664388 #46313] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-27T23:56:21.664429 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef/berkshelf.rb:80:in `rescue in load_berkshelf!'
+E, [2014-10-27T23:56:21.664468 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef/berkshelf.rb:67:in `load_berkshelf!'
+E, [2014-10-27T23:56:21.664504 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef/berkshelf.rb:43:in `load!'
+E, [2014-10-27T23:56:21.664540 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:135:in `load_needed_dependencies!'
+E, [2014-10-27T23:56:21.664576 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/base.rb:44:in `instance='
+E, [2014-10-27T23:56:21.664611 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:240:in `setup_provisioner'
+E, [2014-10-27T23:56:21.664647 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:93:in `initialize'
+E, [2014-10-27T23:56:21.664717 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new'
+E, [2014-10-27T23:56:21.664757 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new_instance'
+E, [2014-10-27T23:56:21.664793 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-10-27T23:56:21.664835 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2014-10-27T23:56:21.664879 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-10-27T23:56:21.664924 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-10-27T23:56:21.664955 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-10-27T23:56:21.664986 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-10-27T23:56:21.665016 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-10-27T23:56:21.665052 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:37:in `block in call'
+E, [2014-10-27T23:56:21.665083 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T23:56:21.665162 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:36:in `call'
+E, [2014-10-27T23:56:21.665193 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-10-27T23:56:21.665223 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:118:in `block (2 levels) in <class:CLI>'
+E, [2014-10-27T23:56:21.665254 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-10-27T23:56:21.665284 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-10-27T23:56:21.665314 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-10-27T23:56:21.665345 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-10-27T23:56:21.665380 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-10-27T23:56:21.665412 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-10-27T23:56:21.665442 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-10-27T23:56:21.665473 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-10-27T23:56:21.665503 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `load'
+E, [2014-10-27T23:56:21.665544 #46313] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `<main>'
+E, [2014-10-27T23:56:21.665577 #46313] ERROR -- Kitchen: ----------------------
+I, [2014-10-27T23:56:46.874824 #46387]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+E, [2014-10-27T23:56:47.455568 #46387] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-27T23:56:47.455614 #46387] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2014-10-27T23:56:47.455640 #46387] ERROR -- Kitchen: Message: Could not load or activate Berkshelf (Unable to activate berkshelf-2.0.18, because thor-0.19.1 conflicts with thor (~> 0.18.0))
+E, [2014-10-27T23:56:47.455663 #46387] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-10-27T23:56:47.455686 #46387] ERROR -- Kitchen: Class: Gem::LoadError
+E, [2014-10-27T23:56:47.455719 #46387] ERROR -- Kitchen: Message: Unable to activate berkshelf-2.0.18, because thor-0.19.1 conflicts with thor (~> 0.18.0)
+E, [2014-10-27T23:56:47.455744 #46387] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-27T23:56:47.455767 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef/berkshelf.rb:80:in `rescue in load_berkshelf!'
+E, [2014-10-27T23:56:47.455831 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef/berkshelf.rb:67:in `load_berkshelf!'
+E, [2014-10-27T23:56:47.455854 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef/berkshelf.rb:43:in `load!'
+E, [2014-10-27T23:56:47.455876 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:135:in `load_needed_dependencies!'
+E, [2014-10-27T23:56:47.455898 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/base.rb:44:in `instance='
+E, [2014-10-27T23:56:47.455920 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:240:in `setup_provisioner'
+E, [2014-10-27T23:56:47.455942 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:93:in `initialize'
+E, [2014-10-27T23:56:47.455964 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new'
+E, [2014-10-27T23:56:47.455986 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new_instance'
+E, [2014-10-27T23:56:47.456008 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-10-27T23:56:47.456029 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2014-10-27T23:56:47.456051 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-10-27T23:56:47.456073 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-10-27T23:56:47.456095 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-10-27T23:56:47.456117 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-10-27T23:56:47.456139 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-10-27T23:56:47.456183 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:37:in `block in call'
+E, [2014-10-27T23:56:47.456234 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T23:56:47.456257 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:36:in `call'
+E, [2014-10-27T23:56:47.456279 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-10-27T23:56:47.456301 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:118:in `block (2 levels) in <class:CLI>'
+E, [2014-10-27T23:56:47.456322 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-10-27T23:56:47.456344 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-10-27T23:56:47.456366 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-10-27T23:56:47.456388 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-10-27T23:56:47.456410 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-10-27T23:56:47.456432 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-10-27T23:56:47.456454 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-10-27T23:56:47.456475 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-10-27T23:56:47.456497 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `load'
+E, [2014-10-27T23:56:47.456519 #46387] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/bin/kitchen:23:in `<main>'
+E, [2014-10-27T23:56:47.456541 #46387] ERROR -- Kitchen: ----------------------
+I, [2014-10-28T00:01:25.671161 #51785]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-10-28T00:01:30.625581 #51785]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+I, [2014-10-28T00:06:47.860995 #45180]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+E, [2014-10-28T00:06:47.871649 #45180] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-28T00:06:47.871737 #45180] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2014-10-28T00:06:47.871829 #45180] ERROR -- Kitchen: Message: Failed to complete #converge action: [uninitialized constant Berkshelf]
+E, [2014-10-28T00:06:47.871885 #45180] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-10-28T00:06:47.871920 #45180] ERROR -- Kitchen: Class: NameError
+E, [2014-10-28T00:06:47.871955 #45180] ERROR -- Kitchen: Message: uninitialized constant Berkshelf
+E, [2014-10-28T00:06:47.871991 #45180] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-28T00:06:47.872044 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef/berkshelf.rb:47:in `resolve'
+E, [2014-10-28T00:06:47.872164 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:394:in `block in resolve_with_berkshelf'
+E, [2014-10-28T00:06:47.872216 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:393:in `synchronize'
+E, [2014-10-28T00:06:47.872261 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:393:in `resolve_with_berkshelf'
+E, [2014-10-28T00:06:47.872306 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:259:in `prepare_cookbooks'
+E, [2014-10-28T00:06:47.872361 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:120:in `create_sandbox'
+E, [2014-10-28T00:06:47.872388 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_solo.rb:33:in `create_sandbox'
+E, [2014-10-28T00:06:47.872431 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:40:in `converge'
+E, [2014-10-28T00:06:47.872475 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-10-28T00:06:47.872544 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-10-28T00:06:47.872589 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-10-28T00:06:47.872639 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-10-28T00:06:47.872674 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-10-28T00:06:47.872730 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-28T00:06:47.872765 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-10-28T00:06:47.872809 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-10-28T00:06:47.872853 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-10-28T00:06:47.872897 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-10-28T00:06:47.872932 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-10-28T00:06:47.872957 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-10-28T00:06:47.873000 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-10-28T00:06:47.873050 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-28T00:06:47.873094 #45180] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-28T00:06:47.873129 #45180] ERROR -- Kitchen: ----------------------
+I, [2014-11-04T12:18:12.336588 #4234]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T12:18:13.302502 #4234]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+I, [2014-11-04T12:18:52.252477 #4234]  INFO -- Kitchen: -----> Kitchen is finished. (0m39.92s)
+I, [2014-11-04T12:19:17.730639 #4372]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T12:19:18.698413 #4372]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+E, [2014-11-04T12:19:18.711234 #4372] ERROR -- Kitchen: ------Exception-------
+E, [2014-11-04T12:19:18.711318 #4372] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2014-11-04T12:19:18.711388 #4372] ERROR -- Kitchen: Message: Failed to complete #converge action: [Berkshelf::BerksfileReadError]
+E, [2014-11-04T12:19:18.711460 #4372] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-11-04T12:19:18.711528 #4372] ERROR -- Kitchen: Class: Berkshelf::BerksfileReadError
+E, [2014-11-04T12:19:18.711636 #4372] ERROR -- Kitchen: Message: Berkshelf::BerksfileReadError
+E, [2014-11-04T12:19:18.711675 #4372] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-11-04T12:19:18.711712 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/ridley-4.1.0/lib/ridley/mixin/from_file.rb:63:in `ensure_presence!'
+E, [2014-11-04T12:19:18.711749 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/ridley-4.1.0/lib/ridley/mixin/from_file.rb:28:in `from_file'
+E, [2014-11-04T12:19:18.711785 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/ridley-4.1.0/lib/ridley/mixin/from_file.rb:5:in `from_file'
+E, [2014-11-04T12:19:18.711821 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/berksfile.rb:165:in `metadata'
+E, [2014-11-04T12:19:18.711857 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/mixin/dsl_eval.rb:26:in `block (3 levels) in clean_room'
+E, [2014-11-04T12:19:18.711894 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/chef_tutorial/Berksfile:1:in `block in dsl_eval_file'
+E, [2014-11-04T12:19:18.711930 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/mixin/dsl_eval.rb:54:in `eval'
+E, [2014-11-04T12:19:18.711966 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/mixin/dsl_eval.rb:54:in `block in dsl_eval_file'
+E, [2014-11-04T12:19:18.712002 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/mixin/dsl_eval.rb:44:in `instance_eval'
+E, [2014-11-04T12:19:18.712037 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/mixin/dsl_eval.rb:44:in `dsl_eval'
+E, [2014-11-04T12:19:18.712073 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/mixin/dsl_eval.rb:54:in `dsl_eval_file'
+E, [2014-11-04T12:19:18.712109 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/berksfile.rb:23:in `from_file'
+E, [2014-11-04T12:19:18.712145 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef/berkshelf.rb:55:in `block in resolve'
+E, [2014-11-04T12:19:18.712181 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/shell/basic.rb:20:in `mute'
+E, [2014-11-04T12:19:18.712216 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef/berkshelf.rb:51:in `resolve'
+E, [2014-11-04T12:19:18.712252 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:394:in `block in resolve_with_berkshelf'
+E, [2014-11-04T12:19:18.712303 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:393:in `synchronize'
+E, [2014-11-04T12:19:18.712342 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:393:in `resolve_with_berkshelf'
+E, [2014-11-04T12:19:18.712378 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:259:in `prepare_cookbooks'
+E, [2014-11-04T12:19:18.712413 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:120:in `create_sandbox'
+E, [2014-11-04T12:19:18.712472 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_solo.rb:33:in `create_sandbox'
+E, [2014-11-04T12:19:18.712508 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:40:in `converge'
+E, [2014-11-04T12:19:18.712544 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-11-04T12:19:18.712579 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-11-04T12:19:18.712625 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-11-04T12:19:18.712666 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-11-04T12:19:18.712697 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-11-04T12:19:18.712727 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-11-04T12:19:18.712758 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-11-04T12:19:18.712788 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-11-04T12:19:18.712818 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-11-04T12:19:18.712849 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-11-04T12:19:18.712879 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-11-04T12:19:18.712910 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-11-04T12:19:18.712940 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-11-04T12:19:18.712971 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-11-04T12:19:18.713023 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-11-04T12:19:18.713065 #4372] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-11-04T12:19:18.713097 #4372] ERROR -- Kitchen: ----------------------
+I, [2014-11-04T12:20:29.273396 #4609]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T12:20:30.244554 #4609]  INFO -- Kitchen: -----> Destroying <default-centos-64>...
+I, [2014-11-04T12:20:33.735937 #4609]  INFO -- Kitchen: -----> Kitchen is finished. (0m4.46s)
+I, [2014-11-04T12:20:37.305639 #4680]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T12:20:38.268478 #4680]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+I, [2014-11-04T12:21:14.828153 #4680]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+E, [2014-11-04T12:22:39.792746 #4680] ERROR -- Kitchen: Converge failed on instance <default-centos-64>.
+I, [2014-11-04T12:26:29.751887 #4856]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T12:26:30.709006 #4856]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+E, [2014-11-04T12:26:30.715108 #4856] ERROR -- Kitchen: ------Exception-------
+E, [2014-11-04T12:26:30.715187 #4856] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2014-11-04T12:26:30.715236 #4856] ERROR -- Kitchen: Message: Failed to complete #converge action: [Berkshelf::BerksfileReadError]
+E, [2014-11-04T12:26:30.715282 #4856] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-11-04T12:26:30.715333 #4856] ERROR -- Kitchen: Class: Berkshelf::BerksfileReadError
+E, [2014-11-04T12:26:30.715376 #4856] ERROR -- Kitchen: Message: Berkshelf::BerksfileReadError
+E, [2014-11-04T12:26:30.715419 #4856] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-11-04T12:26:30.715462 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/ridley-4.1.0/lib/ridley/mixin/from_file.rb:63:in `ensure_presence!'
+E, [2014-11-04T12:26:30.715541 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/ridley-4.1.0/lib/ridley/mixin/from_file.rb:28:in `from_file'
+E, [2014-11-04T12:26:30.715584 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/ridley-4.1.0/lib/ridley/mixin/from_file.rb:5:in `from_file'
+E, [2014-11-04T12:26:30.715628 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/berksfile.rb:165:in `metadata'
+E, [2014-11-04T12:26:30.715670 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/mixin/dsl_eval.rb:26:in `block (3 levels) in clean_room'
+E, [2014-11-04T12:26:30.715712 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/chef_tutorial/Berksfile:1:in `block in dsl_eval_file'
+E, [2014-11-04T12:26:30.715763 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/mixin/dsl_eval.rb:54:in `eval'
+E, [2014-11-04T12:26:30.715810 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/mixin/dsl_eval.rb:54:in `block in dsl_eval_file'
+E, [2014-11-04T12:26:30.715855 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/mixin/dsl_eval.rb:44:in `instance_eval'
+E, [2014-11-04T12:26:30.715923 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/mixin/dsl_eval.rb:44:in `dsl_eval'
+E, [2014-11-04T12:26:30.715968 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/mixin/dsl_eval.rb:54:in `dsl_eval_file'
+E, [2014-11-04T12:26:30.716011 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/berksfile.rb:23:in `from_file'
+E, [2014-11-04T12:26:30.716055 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef/berkshelf.rb:55:in `block in resolve'
+E, [2014-11-04T12:26:30.716112 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/shell/basic.rb:20:in `mute'
+E, [2014-11-04T12:26:30.716158 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef/berkshelf.rb:51:in `resolve'
+E, [2014-11-04T12:26:30.716206 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:394:in `block in resolve_with_berkshelf'
+E, [2014-11-04T12:26:30.716273 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:393:in `synchronize'
+E, [2014-11-04T12:26:30.716313 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:393:in `resolve_with_berkshelf'
+E, [2014-11-04T12:26:30.716357 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:259:in `prepare_cookbooks'
+E, [2014-11-04T12:26:30.716397 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:120:in `create_sandbox'
+E, [2014-11-04T12:26:30.716437 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_solo.rb:33:in `create_sandbox'
+E, [2014-11-04T12:26:30.716477 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:40:in `converge'
+E, [2014-11-04T12:26:30.716522 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-11-04T12:26:30.716572 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-11-04T12:26:30.716623 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-11-04T12:26:30.716667 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-11-04T12:26:30.716710 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-11-04T12:26:30.716767 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-11-04T12:26:30.716811 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-11-04T12:26:30.716854 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-11-04T12:26:30.716925 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-11-04T12:26:30.716969 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-11-04T12:26:30.717014 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-11-04T12:26:30.717064 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-11-04T12:26:30.717122 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-11-04T12:26:30.717167 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-11-04T12:26:30.717211 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-11-04T12:26:30.717252 #4856] ERROR -- Kitchen: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-11-04T12:26:30.717307 #4856] ERROR -- Kitchen: ----------------------
+I, [2014-11-04T12:29:51.504414 #5038]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T12:29:52.475761 #5038]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+I, [2014-11-04T12:30:00.009780 #5038]  INFO -- Kitchen: -----> Setting up <default-centos-64>...
+I, [2014-11-04T12:30:00.014844 #5038]  INFO -- Kitchen: -----> Kitchen is finished. (0m8.51s)
+I, [2014-11-04T12:39:44.668960 #5166]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T12:39:45.653183 #5166]  INFO -- Kitchen: -----> Destroying <default-centos-64>...
+I, [2014-11-04T12:39:49.252542 #5166]  INFO -- Kitchen: -----> Kitchen is finished. (0m4.58s)
+I, [2014-11-04T12:39:53.435124 #5237]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T12:39:54.396894 #5237]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+I, [2014-11-04T12:40:33.968283 #5237]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+I, [2014-11-04T12:41:44.371660 #5237]  INFO -- Kitchen: -----> Setting up <default-centos-64>...
+I, [2014-11-04T12:41:44.374328 #5237]  INFO -- Kitchen: -----> Kitchen is finished. (1m50.94s)
+I, [2014-11-04T12:48:26.084969 #5487]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T12:48:27.052772 #5487]  INFO -- Kitchen: -----> Setting up <default-centos-64>...
+I, [2014-11-04T12:48:27.058298 #5487]  INFO -- Kitchen: -----> Kitchen is finished. (0m0.97s)
+I, [2014-11-04T12:48:33.565209 #5532]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T12:48:34.657703 #5532]  INFO -- Kitchen: -----> Destroying <default-centos-64>...
+I, [2014-11-04T12:48:38.269752 #5532]  INFO -- Kitchen: -----> Kitchen is finished. (0m4.70s)
+I, [2014-11-04T12:48:41.458557 #5603]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T12:48:42.419890 #5603]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+I, [2014-11-04T12:49:23.297742 #5603]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+I, [2014-11-04T12:50:16.990826 #5603]  INFO -- Kitchen: -----> Setting up <default-centos-64>...
+I, [2014-11-04T12:50:16.992582 #5603]  INFO -- Kitchen: -----> Kitchen is finished. (1m35.53s)
+I, [2014-11-04T12:54:26.037121 #5828]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T12:54:27.011595 #5828]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+I, [2014-11-04T12:55:37.891390 #5828]  INFO -- Kitchen: -----> Kitchen is finished. (1m11.85s)
+I, [2014-11-04T13:00:16.913981 #5912]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T13:00:17.900703 #5912]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+E, [2014-11-04T13:00:27.340764 #5912] ERROR -- Kitchen: Converge failed on instance <default-centos-64>.
+I, [2014-11-04T13:14:28.841428 #6069]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T13:14:30.059631 #6069]  INFO -- Kitchen: -----> Destroying <default-centos-64>...
+I, [2014-11-04T13:14:33.837987 #6069]  INFO -- Kitchen: -----> Kitchen is finished. (0m5.00s)
+I, [2014-11-04T13:17:01.154715 #6154]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T13:17:02.134651 #6154]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+I, [2014-11-04T13:17:45.469327 #6154]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+E, [2014-11-04T13:19:40.411675 #6154] ERROR -- Kitchen: Converge failed on instance <default-centos-64>.
+I, [2014-11-04T13:22:37.442658 #6417]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T13:22:38.468561 #6417]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+E, [2014-11-04T13:24:32.045441 #6417] ERROR -- Kitchen: Converge failed on instance <default-centos-64>.
+I, [2014-11-04T13:25:55.426964 #6479]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T13:25:56.450626 #6479]  INFO -- Kitchen: -----> Destroying <default-centos-64>...
+I, [2014-11-04T13:26:00.033479 #6479]  INFO -- Kitchen: -----> Kitchen is finished. (0m4.61s)
+I, [2014-11-04T13:26:03.884236 #6550]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T13:26:04.885008 #6550]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+I, [2014-11-04T13:26:49.921372 #6550]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+E, [2014-11-04T13:27:43.452633 #6550] ERROR -- Kitchen: Converge failed on instance <default-centos-64>.
+I, [2014-11-04T13:31:13.016365 #6869]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T13:31:14.074754 #6869]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+E, [2014-11-04T13:38:08.518120 #6869] ERROR -- Kitchen: Converge failed on instance <default-centos-64>.
+I, [2014-11-04T13:45:11.484211 #6975]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T13:45:12.523884 #6975]  INFO -- Kitchen: -----> Destroying <default-centos-64>...
+I, [2014-11-04T13:45:16.354901 #6975]  INFO -- Kitchen: -----> Kitchen is finished. (0m4.87s)
+I, [2014-11-04T13:45:20.029635 #7046]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T13:45:21.019132 #7046]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+I, [2014-11-04T13:46:04.196794 #7046]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+E, [2014-11-04T13:46:57.358268 #7046] ERROR -- Kitchen: Converge failed on instance <default-centos-64>.
+I, [2014-11-04T13:48:47.537190 #7247]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-04T13:48:48.615724 #7247]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+I, [2014-11-04T14:01:54.531590 #7247]  INFO -- Kitchen: -----> Kitchen is finished. (13m6.99s)

@@ -1,0 +1,34 @@
+DEPENDENCIES
+  example
+    path: .
+    metadata: true
+
+GRAPH
+  apt (2.6.0)
+  build-essential (2.1.2)
+  chef_handler (1.1.6)
+  dmg (2.2.0)
+  example (0.0.1)
+    rbenv (= 1.7.1)
+  git (4.0.2)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    runit (>= 1.0.0)
+    windows (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  ohai (2.0.1)
+  rbenv (1.7.1)
+    apt (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    git (>= 0.0.0)
+    ohai (>= 1.1)
+  runit (1.5.10)
+    build-essential (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  windows (1.34.8)
+    chef_handler (>= 0.0.0)
+  yum (3.4.1)
+  yum-epel (0.5.2)
+    yum (~> 3.0)

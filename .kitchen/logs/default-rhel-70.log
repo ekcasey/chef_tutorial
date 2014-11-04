@@ -1,0 +1,219 @@
+I, [2014-10-27T22:40:23.674003 #44184]  INFO -- default-rhel-70: -----> Creating <default-rhel-70>...
+E, [2014-10-27T22:40:23.825316 #44184] ERROR -- default-rhel-70: Create failed on instance <default-rhel-70>.
+E, [2014-10-27T22:40:23.825479 #44184] ERROR -- default-rhel-70: ------Exception-------
+E, [2014-10-27T22:40:23.825506 #44184] ERROR -- default-rhel-70: Class: ArgumentError
+E, [2014-10-27T22:40:23.825554 #44184] ERROR -- default-rhel-70: Message: Unknown region: "us-west-2a"
+E, [2014-10-27T22:40:23.825576 #44184] ERROR -- default-rhel-70: ------Backtrace-------
+E, [2014-10-27T22:40:23.825596 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/fog-1.24.0/lib/fog/aws/region_methods.rb:6:in `validate_aws_region'
+E, [2014-10-27T22:40:23.825617 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/fog-1.24.0/lib/fog/aws/compute.rb:476:in `initialize'
+E, [2014-10-27T22:40:23.825638 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/fog-core-1.24.0/lib/fog/core/service.rb:115:in `new'
+E, [2014-10-27T22:40:23.825658 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/fog-core-1.24.0/lib/fog/core/service.rb:115:in `new'
+E, [2014-10-27T22:40:23.825678 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/fog-core-1.24.0/lib/fog/compute.rb:62:in `new'
+E, [2014-10-27T22:40:23.825698 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:105:in `connection'
+E, [2014-10-27T22:40:23.825719 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:118:in `create_server'
+E, [2014-10-27T22:40:23.825739 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
+E, [2014-10-27T22:40:23.825759 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-10-27T22:40:23.825779 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-10-27T22:40:23.825799 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-10-27T22:40:23.825820 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-10-27T22:40:23.825840 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-10-27T22:40:23.825860 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:40:23.825880 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-10-27T22:40:23.825901 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-10-27T22:40:23.825921 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2014-10-27T22:40:23.825941 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-10-27T22:40:23.825961 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-10-27T22:40:23.826002 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-10-27T22:40:23.826024 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-10-27T22:40:23.826066 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-27T22:40:23.826087 #44184] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-27T22:40:23.826108 #44184] ERROR -- default-rhel-70: ----------------------
+I, [2014-10-27T22:41:56.877349 #44237]  INFO -- default-rhel-70: -----> Creating <default-rhel-70>...
+E, [2014-10-27T22:41:57.458592 #44237] ERROR -- default-rhel-70: Create failed on instance <default-rhel-70>.
+E, [2014-10-27T22:41:57.458852 #44237] ERROR -- default-rhel-70: ------Exception-------
+E, [2014-10-27T22:41:57.458928 #44237] ERROR -- default-rhel-70: Class: Kitchen::ActionFailed
+E, [2014-10-27T22:41:57.458990 #44237] ERROR -- default-rhel-70: Message: The image id '[ami-99bef1a9]' does not exist
+E, [2014-10-27T22:41:57.459049 #44237] ERROR -- default-rhel-70: ---Nested Exception---
+E, [2014-10-27T22:41:57.459106 #44237] ERROR -- default-rhel-70: Class: Fog::Compute::AWS::NotFound
+E, [2014-10-27T22:41:57.459163 #44237] ERROR -- default-rhel-70: Message: The image id '[ami-99bef1a9]' does not exist
+E, [2014-10-27T22:41:57.459221 #44237] ERROR -- default-rhel-70: ------Backtrace-------
+E, [2014-10-27T22:41:57.459278 #44237] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
+E, [2014-10-27T22:41:57.459337 #44237] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
+E, [2014-10-27T22:41:57.459411 #44237] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-10-27T22:41:57.459468 #44237] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-10-27T22:41:57.459511 #44237] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-10-27T22:41:57.459554 #44237] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-10-27T22:41:57.459597 #44237] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-10-27T22:41:57.459690 #44237] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:41:57.459734 #44237] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-10-27T22:41:57.459777 #44237] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-10-27T22:41:57.459819 #44237] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2014-10-27T22:41:57.459862 #44237] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-10-27T22:41:57.459942 #44237] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-10-27T22:41:57.459990 #44237] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-10-27T22:41:57.460033 #44237] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-10-27T22:41:57.460075 #44237] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-27T22:41:57.460117 #44237] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-27T22:41:57.460160 #44237] ERROR -- default-rhel-70: ----------------------
+I, [2014-10-27T22:42:25.465756 #44274]  INFO -- default-rhel-70: -----> Creating <default-rhel-70>...
+E, [2014-10-27T22:42:25.876453 #44274] ERROR -- default-rhel-70: Create failed on instance <default-rhel-70>.
+E, [2014-10-27T22:42:25.876727 #44274] ERROR -- default-rhel-70: ------Exception-------
+E, [2014-10-27T22:42:25.876804 #44274] ERROR -- default-rhel-70: Class: Kitchen::ActionFailed
+E, [2014-10-27T22:42:25.876865 #44274] ERROR -- default-rhel-70: Message: The image id '[ami-99bef1a9]' does not exist
+E, [2014-10-27T22:42:25.876924 #44274] ERROR -- default-rhel-70: ---Nested Exception---
+E, [2014-10-27T22:42:25.876981 #44274] ERROR -- default-rhel-70: Class: Fog::Compute::AWS::NotFound
+E, [2014-10-27T22:42:25.877040 #44274] ERROR -- default-rhel-70: Message: The image id '[ami-99bef1a9]' does not exist
+E, [2014-10-27T22:42:25.877097 #44274] ERROR -- default-rhel-70: ------Backtrace-------
+E, [2014-10-27T22:42:25.877154 #44274] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
+E, [2014-10-27T22:42:25.877214 #44274] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
+E, [2014-10-27T22:42:25.877272 #44274] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-10-27T22:42:25.877331 #44274] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-10-27T22:42:25.877495 #44274] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-10-27T22:42:25.877540 #44274] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-10-27T22:42:25.877583 #44274] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-10-27T22:42:25.877625 #44274] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:42:25.877668 #44274] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-10-27T22:42:25.877711 #44274] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-10-27T22:42:25.877754 #44274] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2014-10-27T22:42:25.877828 #44274] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-10-27T22:42:25.877875 #44274] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-10-27T22:42:25.877918 #44274] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-10-27T22:42:25.877960 #44274] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-10-27T22:42:25.878002 #44274] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-27T22:42:25.878044 #44274] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-27T22:42:25.878086 #44274] ERROR -- default-rhel-70: ----------------------
+I, [2014-10-27T22:42:45.324527 #44314]  INFO -- default-rhel-70: -----> Creating <default-rhel-70>...
+E, [2014-10-27T22:42:45.810273 #44314] ERROR -- default-rhel-70: Create failed on instance <default-rhel-70>.
+E, [2014-10-27T22:42:45.810479 #44314] ERROR -- default-rhel-70: ------Exception-------
+E, [2014-10-27T22:42:45.810533 #44314] ERROR -- default-rhel-70: Class: Kitchen::ActionFailed
+E, [2014-10-27T22:42:45.810577 #44314] ERROR -- default-rhel-70: Message: The image id '[ami-99bef1a9]' does not exist
+E, [2014-10-27T22:42:45.810626 #44314] ERROR -- default-rhel-70: ---Nested Exception---
+E, [2014-10-27T22:42:45.810667 #44314] ERROR -- default-rhel-70: Class: Fog::Compute::AWS::NotFound
+E, [2014-10-27T22:42:45.810707 #44314] ERROR -- default-rhel-70: Message: The image id '[ami-99bef1a9]' does not exist
+E, [2014-10-27T22:42:45.810746 #44314] ERROR -- default-rhel-70: ------Backtrace-------
+E, [2014-10-27T22:42:45.810787 #44314] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
+E, [2014-10-27T22:42:45.810828 #44314] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
+E, [2014-10-27T22:42:45.810869 #44314] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-10-27T22:42:45.810910 #44314] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-10-27T22:42:45.810951 #44314] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-10-27T22:42:45.810998 #44314] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-10-27T22:42:45.811092 #44314] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-10-27T22:42:45.811141 #44314] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:42:45.811183 #44314] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-10-27T22:42:45.811256 #44314] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-10-27T22:42:45.811300 #44314] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2014-10-27T22:42:45.811341 #44314] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-10-27T22:42:45.811381 #44314] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-10-27T22:42:45.811421 #44314] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-10-27T22:42:45.811468 #44314] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-10-27T22:42:45.811509 #44314] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-27T22:42:45.811549 #44314] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-27T22:42:45.811589 #44314] ERROR -- default-rhel-70: ----------------------
+I, [2014-10-27T22:43:46.741397 #44359]  INFO -- default-rhel-70: -----> Creating <default-rhel-70>...
+E, [2014-10-27T22:43:47.685388 #44359] ERROR -- default-rhel-70: Create failed on instance <default-rhel-70>.
+E, [2014-10-27T22:43:47.685596 #44359] ERROR -- default-rhel-70: ------Exception-------
+E, [2014-10-27T22:43:47.685651 #44359] ERROR -- default-rhel-70: Class: Kitchen::ActionFailed
+E, [2014-10-27T22:43:47.685696 #44359] ERROR -- default-rhel-70: Message: InvalidParameterValue => Invalid availability zone: [us-east-1b]
+E, [2014-10-27T22:43:47.685740 #44359] ERROR -- default-rhel-70: ---Nested Exception---
+E, [2014-10-27T22:43:47.685781 #44359] ERROR -- default-rhel-70: Class: Fog::Compute::AWS::Error
+E, [2014-10-27T22:43:47.685823 #44359] ERROR -- default-rhel-70: Message: InvalidParameterValue => Invalid availability zone: [us-east-1b]
+E, [2014-10-27T22:43:47.685873 #44359] ERROR -- default-rhel-70: ------Backtrace-------
+E, [2014-10-27T22:43:47.685915 #44359] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
+E, [2014-10-27T22:43:47.685959 #44359] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
+E, [2014-10-27T22:43:47.686001 #44359] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-10-27T22:43:47.686044 #44359] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-10-27T22:43:47.686087 #44359] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-10-27T22:43:47.686130 #44359] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-10-27T22:43:47.686173 #44359] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-10-27T22:43:47.686223 #44359] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:43:47.686303 #44359] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-10-27T22:43:47.686350 #44359] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-10-27T22:43:47.686392 #44359] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2014-10-27T22:43:47.686434 #44359] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-10-27T22:43:47.686476 #44359] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-10-27T22:43:47.686517 #44359] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-10-27T22:43:47.686559 #44359] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-10-27T22:43:47.686600 #44359] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-27T22:43:47.686650 #44359] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-27T22:43:47.686692 #44359] ERROR -- default-rhel-70: ----------------------
+I, [2014-10-27T22:44:20.783803 #44396]  INFO -- default-rhel-70: -----> Creating <default-rhel-70>...
+E, [2014-10-27T22:44:21.567500 #44396] ERROR -- default-rhel-70: Create failed on instance <default-rhel-70>.
+E, [2014-10-27T22:44:21.567766 #44396] ERROR -- default-rhel-70: ------Exception-------
+E, [2014-10-27T22:44:21.567841 #44396] ERROR -- default-rhel-70: Class: Kitchen::ActionFailed
+E, [2014-10-27T22:44:21.567918 #44396] ERROR -- default-rhel-70: Message: InvalidParameterValue => Invalid availability zone: [us-east-2a]
+E, [2014-10-27T22:44:21.567978 #44396] ERROR -- default-rhel-70: ---Nested Exception---
+E, [2014-10-27T22:44:21.568020 #44396] ERROR -- default-rhel-70: Class: Fog::Compute::AWS::Error
+E, [2014-10-27T22:44:21.568061 #44396] ERROR -- default-rhel-70: Message: InvalidParameterValue => Invalid availability zone: [us-east-2a]
+E, [2014-10-27T22:44:21.568104 #44396] ERROR -- default-rhel-70: ------Backtrace-------
+E, [2014-10-27T22:44:21.568145 #44396] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
+E, [2014-10-27T22:44:21.568189 #44396] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
+E, [2014-10-27T22:44:21.568231 #44396] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-10-27T22:44:21.568274 #44396] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-10-27T22:44:21.568317 #44396] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-10-27T22:44:21.568360 #44396] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-10-27T22:44:21.568403 #44396] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-10-27T22:44:21.568479 #44396] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:44:21.568525 #44396] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-10-27T22:44:21.568567 #44396] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-10-27T22:44:21.568609 #44396] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2014-10-27T22:44:21.568651 #44396] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-10-27T22:44:21.568695 #44396] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-10-27T22:44:21.568737 #44396] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-10-27T22:44:21.568778 #44396] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-10-27T22:44:21.568820 #44396] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-27T22:44:21.568862 #44396] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-27T22:44:21.568904 #44396] ERROR -- default-rhel-70: ----------------------
+I, [2014-10-27T22:44:32.649089 #44433]  INFO -- default-rhel-70: -----> Creating <default-rhel-70>...
+E, [2014-10-27T22:44:33.832784 #44433] ERROR -- default-rhel-70: Create failed on instance <default-rhel-70>.
+E, [2014-10-27T22:44:33.832988 #44433] ERROR -- default-rhel-70: ------Exception-------
+E, [2014-10-27T22:44:33.833042 #44433] ERROR -- default-rhel-70: Class: Kitchen::ActionFailed
+E, [2014-10-27T22:44:33.833086 #44433] ERROR -- default-rhel-70: Message: InvalidParameterCombination => Non-Windows instances with a virtualization type of 'hvm' are currently not supported for this instance type.
+E, [2014-10-27T22:44:33.833129 #44433] ERROR -- default-rhel-70: ---Nested Exception---
+E, [2014-10-27T22:44:33.833170 #44433] ERROR -- default-rhel-70: Class: Fog::Compute::AWS::Error
+E, [2014-10-27T22:44:33.833212 #44433] ERROR -- default-rhel-70: Message: InvalidParameterCombination => Non-Windows instances with a virtualization type of 'hvm' are currently not supported for this instance type.
+E, [2014-10-27T22:44:33.833254 #44433] ERROR -- default-rhel-70: ------Backtrace-------
+E, [2014-10-27T22:44:33.833295 #44433] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
+E, [2014-10-27T22:44:33.833337 #44433] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
+E, [2014-10-27T22:44:33.833379 #44433] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-10-27T22:44:33.833421 #44433] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-10-27T22:44:33.833496 #44433] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-10-27T22:44:33.833543 #44433] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-10-27T22:44:33.833585 #44433] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-10-27T22:44:33.833627 #44433] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:44:33.833668 #44433] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-10-27T22:44:33.833709 #44433] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-10-27T22:44:33.833751 #44433] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2014-10-27T22:44:33.833792 #44433] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-10-27T22:44:33.833834 #44433] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-10-27T22:44:33.833875 #44433] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-10-27T22:44:33.833916 #44433] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-10-27T22:44:33.833958 #44433] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-27T22:44:33.833999 #44433] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-27T22:44:33.834040 #44433] ERROR -- default-rhel-70: ----------------------
+I, [2014-10-27T22:46:33.955421 #44480]  INFO -- default-rhel-70: -----> Creating <default-rhel-70>...
+E, [2014-10-27T22:46:34.881437 #44480] ERROR -- default-rhel-70: Create failed on instance <default-rhel-70>.
+E, [2014-10-27T22:46:34.881696 #44480] ERROR -- default-rhel-70: ------Exception-------
+E, [2014-10-27T22:46:34.881763 #44480] ERROR -- default-rhel-70: Class: Kitchen::ActionFailed
+E, [2014-10-27T22:46:34.881808 #44480] ERROR -- default-rhel-70: Message: InvalidParameterCombination => Non-Windows instances with a virtualization type of 'hvm' are currently not supported for this instance type.
+E, [2014-10-27T22:46:34.881852 #44480] ERROR -- default-rhel-70: ---Nested Exception---
+E, [2014-10-27T22:46:34.881894 #44480] ERROR -- default-rhel-70: Class: Fog::Compute::AWS::Error
+E, [2014-10-27T22:46:34.881936 #44480] ERROR -- default-rhel-70: Message: InvalidParameterCombination => Non-Windows instances with a virtualization type of 'hvm' are currently not supported for this instance type.
+E, [2014-10-27T22:46:34.881978 #44480] ERROR -- default-rhel-70: ------Backtrace-------
+E, [2014-10-27T22:46:34.882020 #44480] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
+E, [2014-10-27T22:46:34.882062 #44480] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
+E, [2014-10-27T22:46:34.882140 #44480] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-10-27T22:46:34.882187 #44480] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-10-27T22:46:34.882229 #44480] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-10-27T22:46:34.882270 #44480] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-10-27T22:46:34.882312 #44480] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-10-27T22:46:34.882353 #44480] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:46:34.882395 #44480] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-10-27T22:46:34.882437 #44480] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-10-27T22:46:34.882478 #44480] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2014-10-27T22:46:34.882520 #44480] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-10-27T22:46:34.882561 #44480] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-10-27T22:46:34.882602 #44480] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-10-27T22:46:34.882644 #44480] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-10-27T22:46:34.882686 #44480] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-27T22:46:34.882727 #44480] ERROR -- default-rhel-70: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-27T22:46:34.882769 #44480] ERROR -- default-rhel-70: ----------------------

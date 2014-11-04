@@ -1,27 +1,17 @@
 ---
 driver:
-  name: ec2
-  aws_access_key_id: <KEY>
-  aws_secret_access_key: <SECRET_KEY>
-  aws_ssh_key_id: <KEYPAIR_NAME>
-  ssh_key: <PATH_TO_PRIVATE_KEY>
-  region: us-west-2
-  availability_zone: us-west-2a
+  name: vagrant
+  synced_folders:
+    - ["vagrant", "/vagrant"]
 
 provisioner:
   name: chef_solo
 
 platforms:
   - name: centos-6.4
-    driver:
-      image_id: ami-0064fc30
-      username: ec2-user
-    associate_public_ip: true
-    flavor_id: t1.small
-
 
 suites:
   - name: default
     run_list:
-      - chef_tutorial
+      - example
     attributes:

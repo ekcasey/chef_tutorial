@@ -1,0 +1,54 @@
+I, [2014-10-27T22:54:16.733647 #44671]  INFO -- default-centos-63: -----> Creating <default-centos-63>...
+E, [2014-10-27T22:54:17.682999 #44671] ERROR -- default-centos-63: Create failed on instance <default-centos-63>.
+E, [2014-10-27T22:54:17.683200 #44671] ERROR -- default-centos-63: ------Exception-------
+E, [2014-10-27T22:54:17.683254 #44671] ERROR -- default-centos-63: Class: Kitchen::ActionFailed
+E, [2014-10-27T22:54:17.683299 #44671] ERROR -- default-centos-63: Message: The image id '[ami-ef5ff086]' does not exist
+E, [2014-10-27T22:54:17.683342 #44671] ERROR -- default-centos-63: ---Nested Exception---
+E, [2014-10-27T22:54:17.683382 #44671] ERROR -- default-centos-63: Class: Fog::Compute::AWS::NotFound
+E, [2014-10-27T22:54:17.683423 #44671] ERROR -- default-centos-63: Message: The image id '[ami-ef5ff086]' does not exist
+E, [2014-10-27T22:54:17.683465 #44671] ERROR -- default-centos-63: ------Backtrace-------
+E, [2014-10-27T22:54:17.683506 #44671] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
+E, [2014-10-27T22:54:17.683549 #44671] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
+E, [2014-10-27T22:54:17.683591 #44671] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-10-27T22:54:17.683633 #44671] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-10-27T22:54:17.683675 #44671] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-10-27T22:54:17.683717 #44671] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-10-27T22:54:17.683759 #44671] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-10-27T22:54:17.683800 #44671] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:54:17.683842 #44671] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-10-27T22:54:17.683883 #44671] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-10-27T22:54:17.683925 #44671] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2014-10-27T22:54:17.683966 #44671] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-10-27T22:54:17.684008 #44671] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-10-27T22:54:17.684050 #44671] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-10-27T22:54:17.684092 #44671] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-10-27T22:54:17.684133 #44671] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-27T22:54:17.684175 #44671] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-27T22:54:17.684253 #44671] ERROR -- default-centos-63: ----------------------
+I, [2014-10-27T22:54:34.278594 #44708]  INFO -- default-centos-63: -----> Creating <default-centos-63>...
+E, [2014-10-27T22:54:35.775489 #44708] ERROR -- default-centos-63: Create failed on instance <default-centos-63>.
+E, [2014-10-27T22:54:35.775692 #44708] ERROR -- default-centos-63: ------Exception-------
+E, [2014-10-27T22:54:35.775804 #44708] ERROR -- default-centos-63: Class: Kitchen::ActionFailed
+E, [2014-10-27T22:54:35.775850 #44708] ERROR -- default-centos-63: Message: The key pair 'chef_tutorial' does not exist
+E, [2014-10-27T22:54:35.775895 #44708] ERROR -- default-centos-63: ---Nested Exception---
+E, [2014-10-27T22:54:35.775938 #44708] ERROR -- default-centos-63: Class: Fog::Compute::AWS::NotFound
+E, [2014-10-27T22:54:35.775980 #44708] ERROR -- default-centos-63: Message: The key pair 'chef_tutorial' does not exist
+E, [2014-10-27T22:54:35.776024 #44708] ERROR -- default-centos-63: ------Backtrace-------
+E, [2014-10-27T22:54:35.776067 #44708] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
+E, [2014-10-27T22:54:35.776110 #44708] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
+E, [2014-10-27T22:54:35.776154 #44708] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-10-27T22:54:35.776197 #44708] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-10-27T22:54:35.776240 #44708] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-10-27T22:54:35.776283 #44708] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-10-27T22:54:35.776327 #44708] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-10-27T22:54:35.776370 #44708] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:54:35.776413 #44708] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-10-27T22:54:35.776456 #44708] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-10-27T22:54:35.776499 #44708] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2014-10-27T22:54:35.776541 #44708] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-10-27T22:54:35.776653 #44708] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-10-27T22:54:35.776697 #44708] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-10-27T22:54:35.776740 #44708] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-10-27T22:54:35.776818 #44708] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-27T22:54:35.776866 #44708] ERROR -- default-centos-63: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-27T22:54:35.776909 #44708] ERROR -- default-centos-63: ----------------------

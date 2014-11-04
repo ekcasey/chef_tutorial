@@ -1,0 +1,216 @@
+I, [2014-10-27T22:17:43.796917 #43381]  INFO -- default-ubuntu: -----> Creating <default-ubuntu>...
+E, [2014-10-27T22:17:44.347615 #43381] ERROR -- default-ubuntu: Create failed on instance <default-ubuntu>.
+E, [2014-10-27T22:17:44.347806 #43381] ERROR -- default-ubuntu: ------Exception-------
+E, [2014-10-27T22:17:44.347859 #43381] ERROR -- default-ubuntu: Class: Kitchen::ActionFailed
+E, [2014-10-27T22:17:44.347938 #43381] ERROR -- default-ubuntu: Message: The image id '[ami-b5a7ea85]' does not exist
+E, [2014-10-27T22:17:44.347990 #43381] ERROR -- default-ubuntu: ---Nested Exception---
+E, [2014-10-27T22:17:44.348031 #43381] ERROR -- default-ubuntu: Class: Fog::Compute::AWS::NotFound
+E, [2014-10-27T22:17:44.348071 #43381] ERROR -- default-ubuntu: Message: The image id '[ami-b5a7ea85]' does not exist
+E, [2014-10-27T22:17:44.348111 #43381] ERROR -- default-ubuntu: ------Backtrace-------
+E, [2014-10-27T22:17:44.348152 #43381] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
+E, [2014-10-27T22:17:44.348193 #43381] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
+E, [2014-10-27T22:17:44.348234 #43381] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-10-27T22:17:44.348275 #43381] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-10-27T22:17:44.348316 #43381] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-10-27T22:17:44.348357 #43381] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-10-27T22:17:44.348417 #43381] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-10-27T22:17:44.348458 #43381] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:17:44.348499 #43381] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-10-27T22:17:44.348540 #43381] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-10-27T22:17:44.348581 #43381] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2014-10-27T22:17:44.348622 #43381] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-10-27T22:17:44.348663 #43381] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-10-27T22:17:44.348704 #43381] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-10-27T22:17:44.348744 #43381] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-10-27T22:17:44.348784 #43381] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-27T22:17:44.348825 #43381] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-27T22:17:44.348918 #43381] ERROR -- default-ubuntu: ----------------------
+I, [2014-10-27T22:18:17.473975 #43456]  INFO -- default-ubuntu: -----> Creating <default-ubuntu>...
+E, [2014-10-27T22:18:18.316331 #43456] ERROR -- default-ubuntu: Create failed on instance <default-ubuntu>.
+E, [2014-10-27T22:18:18.316603 #43456] ERROR -- default-ubuntu: ------Exception-------
+E, [2014-10-27T22:18:18.316677 #43456] ERROR -- default-ubuntu: Class: Kitchen::ActionFailed
+E, [2014-10-27T22:18:18.316737 #43456] ERROR -- default-ubuntu: Message: Malformed => Invalid id: \"amzn-ami-hvm-2014.09.1.x86_64-ebs\" (expecting \"ami-...\")
+E, [2014-10-27T22:18:18.316804 #43456] ERROR -- default-ubuntu: ---Nested Exception---
+E, [2014-10-27T22:18:18.316949 #43456] ERROR -- default-ubuntu: Class: Fog::Compute::AWS::Error
+E, [2014-10-27T22:18:18.316993 #43456] ERROR -- default-ubuntu: Message: Malformed => Invalid id: \"amzn-ami-hvm-2014.09.1.x86_64-ebs\" (expecting \"ami-...\")
+E, [2014-10-27T22:18:18.317035 #43456] ERROR -- default-ubuntu: ------Backtrace-------
+E, [2014-10-27T22:18:18.317075 #43456] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
+E, [2014-10-27T22:18:18.317117 #43456] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
+E, [2014-10-27T22:18:18.317158 #43456] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-10-27T22:18:18.317199 #43456] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-10-27T22:18:18.317240 #43456] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-10-27T22:18:18.317287 #43456] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-10-27T22:18:18.317331 #43456] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-10-27T22:18:18.317372 #43456] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:18:18.317413 #43456] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-10-27T22:18:18.317454 #43456] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-10-27T22:18:18.317495 #43456] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2014-10-27T22:18:18.317536 #43456] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-10-27T22:18:18.317577 #43456] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-10-27T22:18:18.317618 #43456] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-10-27T22:18:18.317664 #43456] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-10-27T22:18:18.317707 #43456] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-27T22:18:18.318303 #43456] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-27T22:18:18.318354 #43456] ERROR -- default-ubuntu: ----------------------
+I, [2014-10-27T22:18:47.375550 #43496]  INFO -- default-ubuntu: -----> Creating <default-ubuntu>...
+E, [2014-10-27T22:18:47.808314 #43496] ERROR -- default-ubuntu: Create failed on instance <default-ubuntu>.
+E, [2014-10-27T22:18:47.808525 #43496] ERROR -- default-ubuntu: ------Exception-------
+E, [2014-10-27T22:18:47.808580 #43496] ERROR -- default-ubuntu: Class: Kitchen::ActionFailed
+E, [2014-10-27T22:18:47.808625 #43496] ERROR -- default-ubuntu: Message: The image id '[ami-b5a7ea85]' does not exist
+E, [2014-10-27T22:18:47.808667 #43496] ERROR -- default-ubuntu: ---Nested Exception---
+E, [2014-10-27T22:18:47.808708 #43496] ERROR -- default-ubuntu: Class: Fog::Compute::AWS::NotFound
+E, [2014-10-27T22:18:47.808750 #43496] ERROR -- default-ubuntu: Message: The image id '[ami-b5a7ea85]' does not exist
+E, [2014-10-27T22:18:47.808791 #43496] ERROR -- default-ubuntu: ------Backtrace-------
+E, [2014-10-27T22:18:47.808846 #43496] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
+E, [2014-10-27T22:18:47.808891 #43496] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
+E, [2014-10-27T22:18:47.808934 #43496] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-10-27T22:18:47.808976 #43496] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-10-27T22:18:47.809018 #43496] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-10-27T22:18:47.809061 #43496] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-10-27T22:18:47.809103 #43496] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-10-27T22:18:47.809144 #43496] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:18:47.809186 #43496] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-10-27T22:18:47.809228 #43496] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-10-27T22:18:47.809269 #43496] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2014-10-27T22:18:47.809326 #43496] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-10-27T22:18:47.809369 #43496] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-10-27T22:18:47.809411 #43496] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-10-27T22:18:47.809453 #43496] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-10-27T22:18:47.809527 #43496] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-27T22:18:47.809574 #43496] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-27T22:18:47.809616 #43496] ERROR -- default-ubuntu: ----------------------
+I, [2014-10-27T22:24:55.956613 #43629]  INFO -- default-ubuntu: -----> Creating <default-ubuntu>...
+E, [2014-10-27T22:24:56.651118 #43629] ERROR -- default-ubuntu: Create failed on instance <default-ubuntu>.
+E, [2014-10-27T22:24:56.651334 #43629] ERROR -- default-ubuntu: ------Exception-------
+E, [2014-10-27T22:24:56.651391 #43629] ERROR -- default-ubuntu: Class: Kitchen::ActionFailed
+E, [2014-10-27T22:24:56.651436 #43629] ERROR -- default-ubuntu: Message: The image id '[ami-3d50120d]' does not exist
+E, [2014-10-27T22:24:56.651479 #43629] ERROR -- default-ubuntu: ---Nested Exception---
+E, [2014-10-27T22:24:56.651521 #43629] ERROR -- default-ubuntu: Class: Fog::Compute::AWS::NotFound
+E, [2014-10-27T22:24:56.651563 #43629] ERROR -- default-ubuntu: Message: The image id '[ami-3d50120d]' does not exist
+E, [2014-10-27T22:24:56.651605 #43629] ERROR -- default-ubuntu: ------Backtrace-------
+E, [2014-10-27T22:24:56.651646 #43629] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
+E, [2014-10-27T22:24:56.651690 #43629] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
+E, [2014-10-27T22:24:56.651733 #43629] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-10-27T22:24:56.651776 #43629] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-10-27T22:24:56.651819 #43629] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-10-27T22:24:56.651863 #43629] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-10-27T22:24:56.651906 #43629] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-10-27T22:24:56.651948 #43629] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:24:56.651991 #43629] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-10-27T22:24:56.652034 #43629] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-10-27T22:24:56.652077 #43629] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2014-10-27T22:24:56.652119 #43629] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-10-27T22:24:56.652161 #43629] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-10-27T22:24:56.652203 #43629] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-10-27T22:24:56.652279 #43629] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-10-27T22:24:56.652326 #43629] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-27T22:24:56.652369 #43629] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-27T22:24:56.652411 #43629] ERROR -- default-ubuntu: ----------------------
+I, [2014-10-27T22:27:06.321313 #43674]  INFO -- default-ubuntu: -----> Creating <default-ubuntu>...
+E, [2014-10-27T22:27:06.907388 #43674] ERROR -- default-ubuntu: Create failed on instance <default-ubuntu>.
+E, [2014-10-27T22:27:06.907586 #43674] ERROR -- default-ubuntu: ------Exception-------
+E, [2014-10-27T22:27:06.907641 #43674] ERROR -- default-ubuntu: Class: Kitchen::ActionFailed
+E, [2014-10-27T22:27:06.907686 #43674] ERROR -- default-ubuntu: Message: The image id '[ami-3d50120d]' does not exist
+E, [2014-10-27T22:27:06.907729 #43674] ERROR -- default-ubuntu: ---Nested Exception---
+E, [2014-10-27T22:27:06.907771 #43674] ERROR -- default-ubuntu: Class: Fog::Compute::AWS::NotFound
+E, [2014-10-27T22:27:06.907813 #43674] ERROR -- default-ubuntu: Message: The image id '[ami-3d50120d]' does not exist
+E, [2014-10-27T22:27:06.907856 #43674] ERROR -- default-ubuntu: ------Backtrace-------
+E, [2014-10-27T22:27:06.907897 #43674] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
+E, [2014-10-27T22:27:06.907940 #43674] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
+E, [2014-10-27T22:27:06.907983 #43674] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-10-27T22:27:06.908026 #43674] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-10-27T22:27:06.908069 #43674] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-10-27T22:27:06.908113 #43674] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-10-27T22:27:06.908219 #43674] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-10-27T22:27:06.908265 #43674] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:27:06.908308 #43674] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-10-27T22:27:06.908351 #43674] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-10-27T22:27:06.908394 #43674] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2014-10-27T22:27:06.908437 #43674] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-10-27T22:27:06.908481 #43674] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-10-27T22:27:06.908559 #43674] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-10-27T22:27:06.908607 #43674] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-10-27T22:27:06.908650 #43674] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-27T22:27:06.908692 #43674] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-27T22:27:06.908735 #43674] ERROR -- default-ubuntu: ----------------------
+I, [2014-10-27T22:48:36.230847 #44524]  INFO -- default-ubuntu: -----> Creating <default-ubuntu>...
+E, [2014-10-27T22:48:37.158910 #44524] ERROR -- default-ubuntu: Create failed on instance <default-ubuntu>.
+E, [2014-10-27T22:48:37.159118 #44524] ERROR -- default-ubuntu: ------Exception-------
+E, [2014-10-27T22:48:37.159175 #44524] ERROR -- default-ubuntu: Class: Kitchen::ActionFailed
+E, [2014-10-27T22:48:37.159221 #44524] ERROR -- default-ubuntu: Message: InvalidParameterCombination => Non-Windows instances with a virtualization type of 'hvm' are currently not supported for this instance type.
+E, [2014-10-27T22:48:37.159265 #44524] ERROR -- default-ubuntu: ---Nested Exception---
+E, [2014-10-27T22:48:37.159308 #44524] ERROR -- default-ubuntu: Class: Fog::Compute::AWS::Error
+E, [2014-10-27T22:48:37.159349 #44524] ERROR -- default-ubuntu: Message: InvalidParameterCombination => Non-Windows instances with a virtualization type of 'hvm' are currently not supported for this instance type.
+E, [2014-10-27T22:48:37.159391 #44524] ERROR -- default-ubuntu: ------Backtrace-------
+E, [2014-10-27T22:48:37.159439 #44524] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
+E, [2014-10-27T22:48:37.159484 #44524] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
+E, [2014-10-27T22:48:37.159527 #44524] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-10-27T22:48:37.159571 #44524] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-10-27T22:48:37.159613 #44524] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-10-27T22:48:37.159656 #44524] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-10-27T22:48:37.159698 #44524] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-10-27T22:48:37.159740 #44524] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:48:37.159783 #44524] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-10-27T22:48:37.159832 #44524] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-10-27T22:48:37.159875 #44524] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2014-10-27T22:48:37.159953 #44524] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-10-27T22:48:37.159999 #44524] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-10-27T22:48:37.160042 #44524] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-10-27T22:48:37.160084 #44524] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-10-27T22:48:37.160125 #44524] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-27T22:48:37.160167 #44524] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-27T22:48:37.160209 #44524] ERROR -- default-ubuntu: ----------------------
+I, [2014-10-27T22:48:56.142467 #44564]  INFO -- default-ubuntu: -----> Creating <default-ubuntu>...
+E, [2014-10-27T22:48:56.953072 #44564] ERROR -- default-ubuntu: Create failed on instance <default-ubuntu>.
+E, [2014-10-27T22:48:56.953339 #44564] ERROR -- default-ubuntu: ------Exception-------
+E, [2014-10-27T22:48:56.953416 #44564] ERROR -- default-ubuntu: Class: Kitchen::ActionFailed
+E, [2014-10-27T22:48:56.953479 #44564] ERROR -- default-ubuntu: Message: InvalidParameterCombination => Non-Windows instances with a virtualization type of 'hvm' are currently not supported for this instance type.
+E, [2014-10-27T22:48:56.953541 #44564] ERROR -- default-ubuntu: ---Nested Exception---
+E, [2014-10-27T22:48:56.953601 #44564] ERROR -- default-ubuntu: Class: Fog::Compute::AWS::Error
+E, [2014-10-27T22:48:56.953702 #44564] ERROR -- default-ubuntu: Message: InvalidParameterCombination => Non-Windows instances with a virtualization type of 'hvm' are currently not supported for this instance type.
+E, [2014-10-27T22:48:56.953763 #44564] ERROR -- default-ubuntu: ------Backtrace-------
+E, [2014-10-27T22:48:56.953821 #44564] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
+E, [2014-10-27T22:48:56.953881 #44564] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
+E, [2014-10-27T22:48:56.953941 #44564] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-10-27T22:48:56.954000 #44564] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-10-27T22:48:56.954060 #44564] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-10-27T22:48:56.954118 #44564] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-10-27T22:48:56.954179 #44564] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-10-27T22:48:56.954261 #44564] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:48:56.954306 #44564] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-10-27T22:48:56.954380 #44564] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-10-27T22:48:56.954428 #44564] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2014-10-27T22:48:56.954472 #44564] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-10-27T22:48:56.954515 #44564] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-10-27T22:48:56.954558 #44564] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-10-27T22:48:56.954600 #44564] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-10-27T22:48:56.954644 #44564] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-27T22:48:56.954687 #44564] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-27T22:48:56.954730 #44564] ERROR -- default-ubuntu: ----------------------
+I, [2014-10-27T22:49:54.228509 #44608]  INFO -- default-ubuntu: -----> Creating <default-ubuntu>...
+E, [2014-10-27T22:49:55.133379 #44608] ERROR -- default-ubuntu: Create failed on instance <default-ubuntu>.
+E, [2014-10-27T22:49:55.133673 #44608] ERROR -- default-ubuntu: ------Exception-------
+E, [2014-10-27T22:49:55.133752 #44608] ERROR -- default-ubuntu: Class: Kitchen::ActionFailed
+E, [2014-10-27T22:49:55.133815 #44608] ERROR -- default-ubuntu: Message: InvalidParameterCombination => Non-Windows instances with a virtualization type of 'hvm' are currently not supported for this instance type.
+E, [2014-10-27T22:49:55.133875 #44608] ERROR -- default-ubuntu: ---Nested Exception---
+E, [2014-10-27T22:49:55.133932 #44608] ERROR -- default-ubuntu: Class: Fog::Compute::AWS::Error
+E, [2014-10-27T22:49:55.133988 #44608] ERROR -- default-ubuntu: Message: InvalidParameterCombination => Non-Windows instances with a virtualization type of 'hvm' are currently not supported for this instance type.
+E, [2014-10-27T22:49:55.134047 #44608] ERROR -- default-ubuntu: ------Backtrace-------
+E, [2014-10-27T22:49:55.134103 #44608] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
+E, [2014-10-27T22:49:55.134162 #44608] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
+E, [2014-10-27T22:49:55.134220 #44608] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-10-27T22:49:55.134277 #44608] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-10-27T22:49:55.134334 #44608] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-10-27T22:49:55.134408 #44608] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-10-27T22:49:55.134465 #44608] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-10-27T22:49:55.134543 #44608] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-27T22:49:55.134589 #44608] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-10-27T22:49:55.134631 #44608] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-10-27T22:49:55.134673 #44608] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2014-10-27T22:49:55.134714 #44608] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-10-27T22:49:55.134755 #44608] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-10-27T22:49:55.134797 #44608] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-10-27T22:49:55.134839 #44608] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:130:in `setup'
+E, [2014-10-27T22:49:55.134880 #44608] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-27T22:49:55.134923 #44608] ERROR -- default-ubuntu: /Users/ThoughtWorks/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-27T22:49:55.134964 #44608] ERROR -- default-ubuntu: ----------------------
