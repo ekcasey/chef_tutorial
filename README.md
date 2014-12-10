@@ -87,7 +87,6 @@ forwarded ports
     - ["forwarded_port", {guest: 4567, host: 4567}]
 ```
 
-
 Your First Cookbook
 -------------------
 
@@ -118,6 +117,8 @@ The command should print 2.1.1 to the console.
 exercise: Extract the ruby version into an attribute  
 
 exercise: using the rbenv cookbook documentation, install bundler  
+
+Start application. You should see a database error.
 
 Install Mysql With Chef
 
