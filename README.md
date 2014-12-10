@@ -9,6 +9,7 @@ clone minion app
 
 Setting up local environment
 ----------------------------
+install Sublime?
 install vagrant from https://www.vagrantup.com/downloads
 
 install virtualbox from https://www.virtualbox.org/wiki/Downloads
