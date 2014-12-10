@@ -9,17 +9,17 @@ clone minion app
 
 Setting up local environment
 ----------------------------
-install Sublime?
-install vagrant from https://www.vagrantup.com/downloads
+install Sublime?  
+install vagrant from https://www.vagrantup.com/downloads  
 
-install virtualbox from https://www.virtualbox.org/wiki/Downloads
+install virtualbox from https://www.virtualbox.  org/wiki/Downloads  
 
-install ruby with rbenv
-`brew install rbenv`
-`brew install ruby-build`
-`rbenv install 2.1.1`
-`rbenv local 2.1.1`
-`ruby --version \\ 2.1.1`
+install ruby with rbenv  
+`$ brew install rbenv`  
+`$ brew install ruby-build`  
+`$ rbenv install 2.1.1`  
+`$ rbenv local 2.1.1`  
+`$ ruby --version \\ 2.1.1`  
 
 install bundler
 
