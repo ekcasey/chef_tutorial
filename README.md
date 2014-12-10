@@ -29,7 +29,11 @@ install bundler
 Cookbook Boilerplate
 --------------------
 metadata.rb
-Berksfile
+
+```
+version '0.0.1'
+name    'wdiy'
+```
 
 cookbook directory structure
 
@@ -45,26 +49,80 @@ Gemfile
 ```
 source 'https://rubygems.org'
 
-
 gem 'berkshelf'  
 gem 'test-kitchen'  
 gem 'kitchen-vagrant'
 ```
+`$ bundle install`
+
+Berksfile
+
+```
+source 'https://supermarket.getchef.com'
+
+metadata
+```
+
+`$ berks install`
+
 
 `$ kitchen init`
 
 .kitchen.yml
-	- shared folders
-	- forwarded ports
+
+shared folders  
+```
+  synced_folders:
+    - ["vagrant", "/vagrant"]
+```  
+Test whether this worked  
+`$ kitchen setup default-centos`  
+`$ kitchen login`    
+`$ cd /`  
+`$ ls`  
+
+forwarded ports  
+```
+  network:
+    - ["forwarded_port", {guest: 4567, host: 4567}]
+```
 
 
 Your First Cookbook
 -------------------
 
 Install Ruby With Chef  
-Install Bundler With Chef  
-Install Mysql With Chef  
-Creat Minion Database  
+
+We are going to use the rbenv cookbook to install ruby. First we need ot add the rbenv cookbook as a dependency in our metadata file 
+
+`depends 'rbenv', '1.7.1'`
+
+Next use Berkshelf to grab this cookbook form the chef supermarket
+
+`$ berks install`
+
+Now we can use the rbenv_ruby resource to install ruby globally on the vagrant machine.
+
+```
+rbenv_ruby 2.1.1 do
+  global true
+end
+```
+
+Run `$ kitchen setup default-centos` to bring up vagrant and apply the recipe
+Run `$ kitchen login default cenotos` to ssh into the box.
+On the vagrant machine run `ruby --version`
+The command should print 2.1.1 to the console.
+`$ exit`
+
+exercise: Extract the ruby version into an attribute  
+
+exercise: using the rbenv cookbook documentation, install bundler  
+
+Install Mysql With Chef
+
+
+Create Minion Database  
 
 
 
