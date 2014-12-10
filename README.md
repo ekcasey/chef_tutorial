@@ -42,11 +42,14 @@ cookbook
 Setting Up Test Kitchen
 -----------------------
 Gemfile
-`source 'https://rubygems.org'
+```
+source 'https://rubygems.org'
 
-gem 'berkshelf'
-gem 'test-kitchen'
-gem 'kitchen-vagrant'`
+
+gem 'berkshelf'  
+gem 'test-kitchen'  
+gem 'kitchen-vagrant'
+```
 
 `$ kitchen init`
 
@@ -58,10 +61,10 @@ gem 'kitchen-vagrant'`
 Your First Cookbook
 -------------------
 
-Install Ruby With Chef
-Install Bundler With Chef
-Install Mysql With Chef
-Creat Minion Database
+Install Ruby With Chef  
+Install Bundler With Chef  
+Install Mysql With Chef  
+Creat Minion Database  
 
 
 
